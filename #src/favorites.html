@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Избранное"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    <div class="page__content shadow-block">
+                        <div class="page__top">
+                            @@include("_breadcrumbs.html",{"page":"Избранное"})
+                            <h1>Избранное</h1>
+                        </div>                      
+                        <div class="catalog fav-catalog">
+                            <!--cat-top-->
+                            <div class="mb-30 cat-top cat-top--search">
+                                <form action="" class="cat-top__filter">
+                                    <div class="cat-top__items">
+                                        <div class="select-custom">
+                                            <div class="select-custom__selected"><span>По дате добавления</span><svg><use xlink:href="img/icons/sprite.svg#btn-down"></use></svg></div>
+                                            <div class="select-custom__body">
+                                                <button type="button" class="btn-close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                                                <div class="custom-scroll select-custom__options">
+                                                    <div class="h1 select-custom__lbl">Сортировка</div>
+                                                    <div class="select-custom__option">
+                                                        <label class="item-radio">
+                                                            <input type="radio" name="f-sort" checked>
+                                                            <span>Сначало новые</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="select-custom__option">
+                                                        <label class="item-radio">
+                                                            <input type="radio" name="f-sort">
+                                                            <span>Сначало старые</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="cat-top__search">
+                                    <form action="" class="search-form">
+                                        <div class="search-form__inner">
+                                            <svg class="search-form__icon"><use xlink:href="img/icons/sprite.svg#search"></use></svg>
+                                            <input type="text" name="" placeholder="Найти в Избранном">
+                                            <button type="reset" class="search-form__reset" aria-label="Очистить поиск">
+                                                <svg><use xlink:href="img/icons/sprite.svg#close"></use></svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--cat-wrapper-->
+                            <div class="cat-wrapper">
+                                @@include("_card.html",{"nmb":1,"title":"Liquidimplant™ Labium 1 мл.", "fav": true, "bonus": true, "price": false})
+                                @@include("_card.html",{"nmb":2,"title":"Liquidimplant™ Labium 1 мл.", "fav": true, "bonus": true, "price": false})
+                                @@include("_card.html",{"nmb":3,"title":"Liquidimplant™ Labium 1 мл.", "fav": true, "bonus": true, "price": true})
+                                @@include("_card.html",{"nmb":1,"title":"Liquidimplant™ Labium 1 мл.", "fav": true, "bonus": true, "price": false})
+                                @@include("_card.html",{"nmb":4,"title":"Liquidimplant™ Labium 1 мл.", "fav": true, "bonus": true, "price": false})
+                                @@include("_card.html",{"nmb":2,"title":"Liquidimplant™ Labium 1 мл.", "fav": true, "bonus": true, "price": true})
+                                @@include("_card.html",{"nmb":3,"title":"Liquidimplant™ Labium 1 мл.", "fav": true, "bonus": true, "price": false})
+                            </div>
+                            <!--cat-bottom-->
+                            <div class="cat-bottom">
+                                @@include("_pagination.html", {"catalog": true})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

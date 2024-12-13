@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Бьюти-бонусы"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Бьюти-бонусы"})
+                            <h1>Бьюти-бонусы</h1>
+                        </div>    
+                        <section class="bonus-p shadow-block">
+                            <h3 class="mb-30">Бьюти-бонусы — это программа лояльности для покупателей интернет-магазина для косметологов Beauty Expert</h3>
+                            <div class="info-block">
+                                <div class="info-block__top">
+                                    <div class="info-block__icon">
+                                        <img src="img/icons/gift.svg" alt="">
+                                    </div> 
+                                    <h6>Как копить Бьюти-бонусы?</h6>
+                                </div>
+                                <div class="page-content info-block__content">
+                                    <p>Для участия в программе лояльности необходимо зарегистрироваться на сайте <a href="#" target="_blank">www.shop.mybex.ru</a> и совершать покупки через личный кабинет. Совершая покупки, вы накапливаете Бьюти-бонусы. Число Бьюти-бонусов, положенных к начислению, составляет 1-5% от стоимости товаров интернет-магазина для косметологов <a href="#" target="_blank">www.shop.mybex.ru</a> и указано в карточке каждого товара.</p>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <div class="info-block__top">
+                                    <div class="info-block__icon">
+                                        <img src="img/icons/gift.svg" alt="">
+                                    </div> 
+                                    <h6>Как потратить Бьюти-бонусы?</h6>
+                                </div>
+                                <div class="page-content info-block__content">
+                                    <p>Бьюти-бонусами можно оплатить часть очередной покупки из расчета 1 Бьюти-бонус = 1 рубль. Скидка может составить не более 30% от стоимости товара, подлежащего оплате. Бьюти-бонусы не обмениваются и не выдаются в денежном эквиваленте. Накопленные Бьюти-бонусы могут быть использованы только при оплате товаров брендов <a href="#" target="_blank">Lead Fine</a>, <a href="#" target="_blank">Lift</a>,  <a href="#" target="_blank">Amalian</a>, <a href="#" target="_blank">Silkann</a>, <a href="#" target="_blank">FMC</a>,  <a href="#" target="_blank">Linerase</a> и <a href="#" target="_blank">Carboxypen</a>.</p>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <div class="info-block__top">
+                                    <div class="info-block__icon">
+                                        <img src="img/icons/gift.svg" alt="">
+                                    </div> 
+                                    <h6>Как узнать, сколько у меня Бьюти-бонусов? </h6>
+                                </div>
+                                <div class="page-content info-block__content">
+                                    <p>Узнать о количестве активных Бьюти-бонусов и возможности их использования можно<br>в Личном кабинете в <a href="#" target="_blank">разделе Бьюти-бонусы</a>.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!--col-messages-->
+@@if (read === true) {
+<div class="shadow-block col-messages" data-filter="read">
+}
+@@if (read === false) {
+<div class="shadow-block col-messages" data-filter="unread">
+}
+   <div class="col-messages__inner">
+        <div class="col-messages__info">
+            <div class="col-messages__top">
+                <h5>Сообщение 09.01.2024</h5>
+                @@if (read === true) {
+                    <div class="col-messages__status open">Открытое</div>
+                    @@if (noty === true) {
+                        <div class="col-messages__noty unread">1 непрочитанное сообщение</div>
+                    }
+                    @@if (noty === false) {
+                        <div class="col-messages__noty read">Нет непрочитанных сообщений</div>
+                    }
+                }
+                @@if (read === false) {
+                    <div class="col-messages__status close">Закрытое</div>
+                }
+            </div>
+            <p>Тема: 1634 заказ</p>
+        </div>
+        <a href="#" class="btn main-btn main-btn--light">Открыть чат</a>
+   </div>
+</div>
+
+
+

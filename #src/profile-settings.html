@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Настройки"
+})
+
+<body>
+    <div class="wrap wrap--profile">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_profile-aside.html")
+                    <div class="page__content">
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Личный кабинет"})
+                            <div class="back-top">
+                                <div class="back-top__inner">
+                                    <a href="account.html" class="back-btn"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></a>
+                                    <h1>Настройки</h1>
+                                </div>
+                            </div>
+                        </div>                      
+                        <section class="section settings-p shadow-block">
+                            <h3 class="mb-30">Смена пароля</h3>
+                            <form action="" class="form settings-form"  onsubmit="event.preventDefault();formSuccess(this)">
+                                <div class="item-form item-form--password">
+                                    <input type="password" name="password" placeholder="Введите новый пароль*">   
+                                    <button type="button" class="item-form__eye"></button>    
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form item-form--password">
+                                    <input type="password" name="password" placeholder="Повторите пароль*">   
+                                    <button type="button" class="item-form__eye"></button>    
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <button type="submit" class="btn main-btn">Сохранить</button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

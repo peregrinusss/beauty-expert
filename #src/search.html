@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Результаты поиска"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": true})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                @@include("_breadcrumbs.html",{"page":"Результаты поиска"})
+                                <h1>Результаты поиска</h1>  
+                            </div>
+                            <section class="search-p">                        
+                                <!--search-form-->
+                                <form action="" class="search-form" onsubmit="event.preventDefault();searchFormSuccess(this)">
+                                    <div class="search-form__inner">
+                                        <svg class="search-form__icon"><use xlink:href="img/icons/sprite.svg#search"></use></svg>
+                                        <input type="text" name="" placeholder="Найти" value="Филлер">
+                                        <button type="reset" class="search-form__reset" aria-label="Очистить поиск">
+                                            <svg><use xlink:href="img/icons/sprite.svg#close"></use></svg>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="btn main-btn">Найти</button>
+                                </form>
+                                <!--cat-wrapper-->
+                                <div class="cat-wrapper">
+                                    @@include("_card.html",{"nmb":1,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":1,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":1,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": true})
+                                    <!--card-->
+                                    <div class="card">
+                                        <div class="card__preview">
+                                            <div class="card-lbls">
+                                                <span class="new">Новинка</span>
+                                                <span class="recommended">Рекомендуем</span>
+                                            </div>
+                                            <button class="js-fav card__fav active"><svg><use xlink:href="img/icons/sprite.svg#fav"></use></svg></button>
+                                            <a href="#" class="media-contain">
+                                                <img src="img/product-1.png" alt="Liquidimplant™ Labium 1 мл.">
+                                            </a>
+                                            <div class="card__bonus">112</div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h5 class="h6"><a href="#">Liquidimplant™ Labium 1 мл.</a></h5>
+                                            <h6>Ботулинический токсин типа А, гемагглютинин комплекс</h6>
+                                                <div class="card__price">
+                                                    <span class="h5 rub card__totalprice">900</span>
+                                                    <span class="card__discount">-15%</span>
+                                                    <del class="card__old-price">1 147</del>
+                                                </div>
+                                            <div class="card__action in-card">
+                                                <button class="btn main-btn card__add">Купить</button>
+                                                <div class="quantity">
+                                                    <button class="quantity__btn js-minus" type="button"></button>
+                                                    <span class="quantity__count"><input type="number" value="1"></span>
+                                                    <button class="quantity__btn js-plus" type="button"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--cat-bottom-->
+                                <div class="cat-bottom">
+                                    @@include("_pagination.html", {"catalog": true})
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

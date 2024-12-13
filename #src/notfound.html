@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Ошибка"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <!--page__content-->
+                    <div class="page__content">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                @@include("_breadcrumbs.html",{"page":"Ошибка"})
+                            </div>                    
+                            <!--notfound-->
+                            <section class="section notfound">
+                                <div class="notfound__content">
+                                    <h1>Ой..</h1>
+                                    <p>Похоже, такой страницы не существует :(</p>
+                                    <a href="#" class="btn main-btn main-btn--light">Вернуться на Главную</a>
+                                </div>
+                                <div class="notfound__img">
+                                    <img src="img/notfound.png" alt="Ошибка">
+                                </div>
+                            </section>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

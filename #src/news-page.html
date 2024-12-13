@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Онлайн — магазин теперь в Telegram"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                @@include("_breadcrumbs-2.html",{"page1": "Новости","page2":"Онлайн — магазин теперь в Telegram"})
+                                <h1>Онлайн — магазин теперь в Telegram</h1>
+                            </div>                      
+                            <div class="section news-p">
+                                <div class="news-p__img">
+                                    <picture>
+                                        <source srcset="img/news-1-1.webp" media="(min-width: 575.98px)" type="image/webp">
+                                        <source srcset="img/news-1-1.jpg" media="(min-width: 575.98px)">
+                                        <source srcset="img/news-1-1-mob.webp" type="image/webp">
+                                        <source srcset="img/news-1-1-mob.jpg">
+                                        <img src="img/news-1-1.jpg" alt="Онлайн — магазин теперь в Telegram">
+                                    </picture>
+                                </div> 
+                                <div class="news-p__date">20.03.2024</div>                          
+                                <div class="page-content">
+                                    <p>Дорогие друзья!<br>Для вашего удобства мы сделали удобный онлайн — магазин внутри Telegram. Нажмите на кнопку ниже и совершайте покупки с максимальным комфортом.</p>
+                                    <a href="#">Перейти в магазин</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

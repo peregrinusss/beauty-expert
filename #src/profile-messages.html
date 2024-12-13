@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Сообщения"
+})
+
+<body>
+    <div class="wrap wrap--profile">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_profile-aside.html")
+                    <div class="page__content">
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Личный кабинет"})
+                            <div class="back-top">
+                                <div class="back-top__inner">
+                                    <a href="account.html" class="back-btn"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></a>
+                                    <h1>Сообщения</h1>
+                                </div>
+                            </div>
+                            <div class="mb-30 cat-top">
+                                <div class="filter-form cat-top__filter">
+                                    <div class="cat-top__items">
+                                        <label class="text-radio">
+                                            <input type="radio" name="f-radio" value="all" checked>
+                                            <span>Все</span>
+                                        </label>                                 
+                                        <label class="text-radio">
+                                            <input type="radio" name="f-radio" value="read">
+                                            <span>Открытые</span>
+                                        </label>
+                                        <label class="text-radio">
+                                            <input type="radio" name="f-radio" value="unread">
+                                            <span>Закрытые</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="cat-top__btn">
+                                    <button class="btn main-btn mod-open-btn" data-modal="messages-modal">Написать сообщение</button>
+                                </div>
+                            </div>
+                        </div>                      
+                        <div class="section messages-all">
+                            @@include("_col-messages.html",{"read":true, "noty": true})
+                            @@include("_col-messages.html",{"read":true, "noty": false})
+                            @@include("_col-messages.html",{"read":false, "noty": false})
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

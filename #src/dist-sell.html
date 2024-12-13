@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Дистанционная продажа"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Дистанционная продажа"})
+                            <h1>Дистанционная продажа</h1>
+                        </div> 
+                        <section class="dist-sell shadow-block">
+                            <h3>Общая информация</h3>
+                            <div class="page-content">
+                                <p>На сайте «Beauty Expert» доступна оплата подтвержденных заказов онлайн банковской картой. Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку «Оплата заказа банковской картой». Оплата происходит через ПАО СБЕРБАНК.</p>
+                            </div>
+                        </section>
+                        <section class="dist-sell shadow-block">
+                            <h3>Режим работы продажи дистанционным способом</h3>
+                            <div class="page-content">
+                                <p>Оформить и оплатить заказ онлайн можно круглосуточно. Обработка и доставкa товаров осуществляется 24 часа, при самовывозе формирование заказов зависит от режима работы и прекращается за 1 час до окончания рабочего дня.</p>
+                            </div>
+                        </section>
+                        <section class="dist-sell shadow-block">
+                            <h3>Сведения о контролирующем органе</h3>
+                            <div class="page-content">
+                                <p>Сведения об уполномоченном органе, осуществляющем контроль за розничной продажей лекарственных препаратов дистанционным способом: Федеральная служба по надзору в сфере здравоохранения<br>
+                                    Адрес: 109074, Москва, Славянская площадь, д. 4, стр. 1<br>
+                                    тел. +7 495 698-45-38, +7 499 578-02-30<br>
+                                    Актуальные сведения о Федеральной службе по надзору в сфере здравоохранения, а также форма обратной связи размещены на сайте roszdravnadzor.ru</p>
+                            </div>
+                        </section>
+                        <section class="dist-sell shadow-block">
+                            <h3>Условия дистанционной продажи</h3>
+                            <div class="page-content">
+                                <p>С правилами дистанционной продажи можно ознакомиться по <a href="#" target="_blank">ссылке</a>.</p>
+                            </div>
+                        </section>
+                        <section class="dist-sell shadow-block">
+                            <h3>Контакты</h3>
+                            <div class="page-content">
+                                <p>Телефон: +7 495 989-18-19<br>Электронная почта: info@mybex.ru </p>
+                                <p>Контакты работника отвечающего за размещение информации о лекарственных препаратах на сайте «Beauty Expert»:<br> +7 495 989-18-19</p>
+                            </div>
+                        </section>
+                        <section class="dist-sell shadow-block">
+                            <h3>Лицензия</h3>
+                            <div class="dist-sell__certs">
+                                <div class="dist-sell__cert" data-fancybox="certificates" data-src="img/cert.png"><img src="img/cert.png" alt=""></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

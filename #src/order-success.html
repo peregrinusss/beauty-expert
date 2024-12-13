@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Оформление заказа"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    <!--page__content-->
+                    <div class="page__content shadow-block">                      
+                        <!--order-->
+                        <section class="order-success">
+                            <div class="icon-success"></div>
+                            <h1 class="h3">Ваш заказ №1857 от 14.04.2024 17:25:31 успешно создан</h1>
+                            <p>Вы можете следить за выполнением своего заказа в Персональном разделе  сайта. Обратите внимание, что для входа в этот раздел вам необходимо будет ввести логин и пароль пользователя сайта.</p>
+                            <a href="#" class="btn main-btn">Отследить статус заказа</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

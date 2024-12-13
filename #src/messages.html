@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Сообщения"
+})
+
+<body>
+    <div class="wrap wrap--profile">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_profile-aside.html")
+                    <div class="shadow-block page__content">
+                        <div class="page__top">                               
+                            <div class="messages-top">
+                                <div class="messages-top__inner">
+                                    <a href="#" class="back-btn"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg>Назад к сообщениям</a>
+                                    <div class="messages-top__info">
+                                        <h1 class="h5">Сообщение <span>09.01.2024</span></h1>
+                                        <span class="messages-top__status">Открытое</span>
+                                        <p>Тема: Доставка товара</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                      
+                        <div class="section messages-p">
+                            <div class="custom-scroll">
+                                <div class="messages-p__items">
+                                    <div class="item-message is-out">
+                                        <p>Добрый день. Подскажите, пожалуйста, примерный срок доставки в Санкт-Петербург? Так же хотелось бы узнать, соблюдает ли транспортная компания температурный режим при доставке ботулотоксина (Релатокс)? Спасибо заранее за ответы :)</p>       
+                                        <span class="item-message__time">15:28</span>
+                                    </div>
+                                    <div class="item-message is-in">
+                                        <p>Добрый день! С Вами свяжется наш менеджер и расскажет все условия покупки. С уважением, Анна. Консультант поддержки Beauty Expert</p>
+                                        <span class="item-message__time">15:29</span>
+                                    </div>
+                                    <div class="messages-p__date">17.03.2024</div>
+                                    <div class="item-message is-out">
+                                        <p>Менеджер не перезвонил, что делать?</p>
+                                        <span class="item-message__time">15:29</span>
+                                    </div>
+                                    <div class="item-message is-in">
+                                        <p>Добрый день! Приносим свои извинения за предоставленные неудобства. Данная ситуация будет решена в ближайшее время. Мы cделаем все возможное, чтобы Вы получили информацию, которая необходима. Ожидайте звонка. С уважением, Анна. Консультант поддержки Beauty Expert</p>
+                                        <span class="item-message__time">15:40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="messages-p__bottom">
+                                <form class="form send-form">
+                                    <div class="send-form__txt">
+                                        <textarea placeholder="Введите сообщение" name="message" oninput="this.style.height=''; this.style.height = this.scrollHeight + 'px'"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn"><svg><use xlink:href="img/icons/sprite.svg#send"></use></svg></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

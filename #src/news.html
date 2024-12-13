@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Новости"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                @@include("_breadcrumbs.html",{"page":"Новости"})
+                                <h1>Новости</h1>
+                            </div>                      
+                            <div class="section news">
+                                <div class="news__wrapper">
+                                    @@include("_item-news.html", {"nmb": 1, "title": "Семинар: коллагенотерапия в косметологии: linerase — универсальный препарат для решения различных эстетических", "txt": "Коллагенотерапия в косметологии: linerase — универсальный препарат для решения различных эстетических"})
+                                    @@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "Мы запустили онлайн - магазин в Telegram"})
+                                    @@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "Мы запустили онлайн - магазин в Telegram"})
+                                    @@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "Мы запустили онлайн - магазин в Telegram"})
+                                    @@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "Мы запустили онлайн - магазин в Telegram"})
+                                    @@include("_item-news.html", {"nmb": 2, "title": "III Черноморский конгресс по пластической хирургии и косметологии", "txt": "Мы запустили онлайн - магазин в Telegram"})
+                                    @@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "Мы запустили онлайн - магазин в Telegram"})
+                                    @@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "С радостью сообщаем вам, что наша компания является партнёром III Черноморского конгресса по пластической хирургии"})
+                                </div>
+                                <!--cat-bottom-->
+                                <div class="cat-bottom">
+                                    @@include("_pagination.html", {"catalog": false})
+                                </div>
+                            </div>
+                            <div class="banner-block banner-block--subscribe">
+                                <div class="media-cover">
+                                    <picture>
+                                        <source srcset="img/subscribe.webp" media="(min-width: 575.98px)" type="image/webp">
+                                        <source srcset="img/subscribe.jpg" media="(min-width: 575.98px)">
+                                        <source srcset="img/subscribe-mob.webp" type="image/webp">
+                                        <source srcset="img/subscribe-mob.jpg">
+                                        <img src="img/subscribe.jpg" alt="Подписаться на новости">
+                                    </picture>
+                                </div>
+                                <div class="banner-block__content">
+                                    <h2 class="h1">Подпишитесь<br>на новости</h2>
+                                    <button class="btn main-btn main-btn--light mod-open-btn" data-modal="subscribe-modal">Подписаться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

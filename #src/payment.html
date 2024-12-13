@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Оплата"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs-2.html",{"page1": "Покупателю","page2":"Оплата"})
+                            <h1>Покупателю</h1>
+                            <div class="tabs">
+                                <a href="#" class="active">Оплата</a>
+                                <a href="#">Доставка</a>
+                                <a href="#">Гарантии</a>
+                            </div>
+                        </div>    
+                        <section class="buyers shadow-block">
+                            <h3 class="mb-30">В нашем магазине вы сможете оплатить товар несколькими способами:</h3>
+                            <div class="info-block">
+                                <div class="info-block__top">
+                                    <div class="info-block__icon">
+                                        <img src="img/icons/coin.svg" alt="">
+                                    </div> 
+                                    <h6>Наличными</h6>
+                                </div>
+                                <div class="page-content info-block__content">
+                                    <p>Курьеру (при доставках по Москве) или в офисе</p>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <div class="info-block__top">
+                                    <div class="info-block__icon">
+                                        <img src="img/icons/wallet.svg" alt="">
+                                    </div> 
+                                    <h6>По безналичному расчету</h6>
+                                </div>
+                                <div class="page-content info-block__content">
+                                    <p>Безналичный расчет доступен только для юридических лиц. После оформления заказа будет автоматически сформирован счет на оплату, который можно распечатать и оплатить. Предоплаченный заказ вручается лицу, указанному в качестве Получателя Заказа, по документу, удостоверяющему личность.</p>
+                                    <div class="read-more more-hidden">
+                                        <div class="read-more__btns">
+                                            <button class="btn read-more__btn" data-open="Показать реквизиты" data-close="Скрыть реквизиты">
+                                                <svg><use xlink:href="img/icons/sprite.svg#btn-down"></use></svg>
+                                                <span>Показать реквизиты</span>
+                                            </button>
+                                            <a download="" href="#">Скачать</a>
+                                        </div>
+                                        <div class="page-content read-more__content">
+                                            <p>ООО «Бьюти эксперт Медикал»<br>ИНН 7718941952<br>КПП 771801001</p>
+                                            <p>БИК 044525593</p>
+                                            <br>
+                                            <p>Банк: ОАО "Альфа-Банк" г. Москва</p>
+                                            <p>Расчетный счет: 40702810602860000779<br>Корреспондентский счет: 30101810200000000593 в ОПЕРУ МОСКОВСКОГО ГТУ БАНКА РОССИИ</p>                 
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <div class="info-block__top">
+                                    <div class="info-block__icon">
+                                        <img src="img/icons/cards.svg" alt="">
+                                    </div> 
+                                    <h6>Банковской картой</h6>
+                                </div>
+                                <div class="page-content info-block__content">
+                                    <p>Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку «Оплата заказа банковской картой».<br>Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных систем: </p>
+                                    <div class="payments">
+                                        <img src="img/logo/mastercard.svg" alt="Mastercard">
+                                        <img src="img/logo/visa.svg" alt="Visa">
+                                        <img src="img/logo/mir.svg" alt="МИР">
+                                        <img src="img/logo/sbp.svg" alt="СБП">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="buyers shadow-block">
+                            <h3 class="mb-30">Описание процесса передачи данных</h3>
+                            <div class="page-content">
+                                <p>Для оплаты (ввода реквизитов вашей карты) вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК.<br>Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL.</p>
+                                <p>В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard SecureCode для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. </p>
+                                <p>Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК.<br>Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ.</p>
+                                <p>Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int. и MasterCard Europe Sprl. </p>
+                                <p>Возврат переведенных средств, производится на ваш банковский счет в течение 5—30 рабочих дней (срок зависит от Банка, который выдал вашу банковскую карту).</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

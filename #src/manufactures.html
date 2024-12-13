@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Производители"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                @@include("_breadcrumbs.html",{"page":"Производители"})
+                                <h1>Производители</h1>
+                            </div>                      
+                            <div class="section manufactures">
+                                <div class="manufactures__wrapper">
+                                    @@include("_item-manu.html",{"title":"LineRase", "img": 8})
+                                    @@include("_item-manu.html",{"title":"LineRase", "img": 8})
+                                    @@include("_item-manu.html",{"title":"LineRase", "img": 8})
+                                    @@include("_item-manu.html",{"title":"LineRase", "img": 8})
+                                    @@include("_item-manu.html",{"title":"LineRase", "img": 8})
+                                    @@include("_item-manu.html",{"title":"LineRase", "img": 8})
+                                    @@include("_item-manu.html",{"title":"LineRase", "img": 8})
+                                    @@include("_item-manu.html",{"title":"LineRase", "img": 8})
+                                </div>
+                                <!--cat-bottom-->
+                                <div class="cat-bottom">
+                                    @@include("_pagination.html", {"catalog": false})
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

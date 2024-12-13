@@ -1,0 +1,132 @@
+.brands {
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 10px;
+    }
+    @media (max-width: $bp1) {
+        .section-top {
+            .chevron-btn {
+                padding-left: 11px;
+                padding-right: 11px;
+            }
+        }
+    }
+}
+.item-brand {
+    display: block;
+    min-height: 176px;
+    background: #F7F7F7;
+    border-radius: 16px;
+    overflow: hidden;
+    &:first-child {
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+    }
+    &:nth-child(4n+2) {
+        grid-column-end: span 2;
+    }
+    .media-contain {
+        height: 100%;
+        mix-blend-mode: darken;
+        transform: translate3d(0,0,0);
+        border-radius: 16px;
+    }
+    @media (max-width: $bp1) {
+        min-height: 150px;
+    }
+    @media (max-width: $bp2) {
+        min-height: 120px;
+    }
+    @media (max-width: $bp4) {
+        min-height: 100px;
+        grid-column-end: span 3;
+        border-radius: 12px;
+        &:first-child, &:nth-child(4n+2) {
+           grid-column-end: span 3; 
+        }
+    }
+    @media (max-width: $bp5) {
+        min-height: 84px;
+    }
+}
+.manufactures {
+	&__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 40px 10px;
+    }
+    @media (max-width: $bp4) {
+        &__wrapper {
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px 10px;
+        }
+    }
+    @media (max-width: $bp5) {
+        &__wrapper {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+.item-manu {
+    .media-contain {
+        padding-top: 80%;
+        mix-blend-mode: darken;
+        transform: translate3d(0,0,0);
+    }
+    a {
+        font-weight: 500;
+        color: $maincolor;
+    }
+    &__preview {
+        display: block;
+        padding: 20px 30px;
+        border-radius: 16px;
+        background: #FAFAFA;
+        margin-bottom: 12px;
+    }
+    @media (max-width: $bp2) {
+        &__preview {
+            padding: 10px 20px;
+        }
+    }
+    @media (max-width: $bp4) {
+        h6 {
+            font-size: 14px;
+        }
+    }
+}
+.brand-p {
+    .page-content {
+        max-width: 782px;
+    }
+    &__img {
+        margin-bottom: 20px;
+        img {
+            min-height: 307px;
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+    }
+    @media (max-width: $bp1) {
+        &__img {
+            max-width: 910px;
+        }
+    }
+    @media (max-width: $bp2) {
+        &__img {
+            img {
+                min-height: 237px;
+            }
+        }
+    }
+    @media (max-width: $bp5) {
+        &__img {
+            img {
+                min-height: 0
+            }
+        }
+    }
+}

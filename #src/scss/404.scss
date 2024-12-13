@@ -1,0 +1,53 @@
+.notfound {
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    &__content {
+        max-width: 233px;
+        justify-self: center;
+        h1 {
+            font-size: 64px;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .main-btn {
+            width: 100%;
+        }
+    }
+    &__img {
+        max-width: 450px;
+        justify-self: center;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    @media (max-width: $bp1) {
+        grid-template-columns: 0.7fr 1fr;
+    }
+    @media (max-width: $bp2) {
+        &__img {
+            max-width: 300px;
+        }
+        &__content {
+            max-width: 180px;
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: $bp4) {
+        padding: 30px 0 0;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+}

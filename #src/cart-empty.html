@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Корзина"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    <!--page__content-->
+                    <div class="page__content shadow-block">
+                        <div class="page__top">
+                            @@include("_breadcrumbs.html",{"page":"Корзина"})
+                        </div>
+                        <!--cart-->
+                        <section class="section cart-empty">
+                            <svg><use xlink:href="img/icons/sprite.svg#cart"></use></svg>
+                            <h1 class="h3">В корзине пока что ничего нет</h1>
+                            <a href="#" class="btn main-btn">Перейти к покупкам</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

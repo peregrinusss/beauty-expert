@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Оформление заказа"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page page--sticky">
+                     <!--page__sticky-->
+                    <div class="page__sticky">
+                         <!--page__sticky-content-->
+                        <div class="page__sticky-content">
+                            <div class="page__top shadow-block">
+                                @@include("_breadcrumbs-2.html",{"page1":"Корзина","page2":"Оформление заказа"})
+                                <h1>Оформление заказа</h1>
+                                <a href="#" class="back-btn"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg>Назад в корзину</a>
+                            </div>                       
+                            <!--order-->
+                            <div class="order">
+                                <form action="" class="order-form">
+                                    <input name="recipientName" type="hidden" value="Иванов Иван">
+                                    <input name="recipientTel" type="hidden" value="+7 900 800 600 77">
+                                    <input name="recipientMail" type="hidden" value="marketing@mybex.ru">
+                                    <!--fieldset-->
+                                    <div class="shadow-block order-form__fieldset">
+                                        <div class="mb-30 order-form__top">
+                                            <h3>Способ доставки</h3>
+                                        </div>
+                                        <div class="acc-radio item-del">
+                                            <label class="item-radio">
+                                                <input type="radio" name="delivery" value="1">
+                                                <div class="item-radio__txt">
+                                                    <span>Самовывоз</span>
+                                                    <span>Бесплатно</span>
+                                                </div>                                
+                                            </label>
+                                            <div class="acc-radio__body">
+                                                <div class="page-content item-del__content">
+                                                    <h6>Адрес:</h6>
+                                                    <p>107076, г. Москва, Стромынский переулок, д.6 (м. Сокольники)</p>
+                                                    <a href="#" target="_blank">Посмотреть на карте</a>
+                                                    <h6>Режим работы:</h6>
+                                                    <p>ПН-ПТ с 10:00 до 18:30</p>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="acc-radio item-del">
+                                            <label class="item-radio">
+                                                <input type="radio" name="delivery" value="2">
+                                                <div class="item-radio__txt">
+                                                    <span>Доставка по Москве и Санкт Петербургу</span>
+                                                    <span>350 ₽</span>
+                                                </div>
+                                            </label>
+                                            <div class="acc-radio__body">
+                                                <div class="page-content item-del__content">
+                                                    <p class="red">Внимание! В корзине есть товар, доступный только для самовывоза</p>
+                                                    <p>При заказе на сумму до 10 000 рублей (не более 7 км от конечной станции метро)</p>
+                                                    <h6>Адрес доставки:</h6>
+                                                    <div class="item-del__form">
+                                                        <div class="item-form">
+                                                            <input type="text" placeholder="Город*">
+                                                            <div class="item-form__error"></div>
+                                                        </div>
+                                                        <div class="item-form">
+                                                            <input type="text" placeholder="Улица*">
+                                                            <div class="item-form__error"></div>
+                                                        </div>
+                                                        <div class="item-form">
+                                                            <input type="text" placeholder="Дом*">
+                                                            <div class="item-form__error"></div>
+                                                        </div>
+                                                        <div class="item-form">
+                                                            <input type="text" placeholder="Подъезд">
+                                                            <div class="item-form__error"></div>
+                                                        </div>
+                                                        <div class="item-form">
+                                                            <input type="text" placeholder="Квартира">
+                                                            <div class="item-form__error"></div>
+                                                        </div>
+                                                        <div class="item-form">
+                                                            <input type="text" placeholder="Этаж">
+                                                            <div class="item-form__error"></div>
+                                                        </div>
+                                                        <div class="item-form">
+                                                            <input type="text" placeholder="Домофон">
+                                                            <div class="item-form__error"></div>
+                                                        </div>
+                                                        <div class="item-form">
+                                                            <textarea placeholder="Детали, комментарий" oninput="this.style.height=''; this.style.height = this.scrollHeight + 'px'"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-radio item-del">
+                                            <label class="item-radio">
+                                                <input type="radio" name="delivery" value="3">
+                                                <div class="item-radio__txt">
+                                                    <span>Доставка по Московской области</span>
+                                                    <span>При заказе на сумму менее 3000 рублей, стоимость доставки уточнит менеджер</span>
+                                                </div>
+                                            </label>
+                                            <div class="acc-radio__body">
+                                                <div class="page-content item-del__content">
+                                                    <p>При заказе на сумму менее 3000 рублей, стоимость доставки уточнит менеджер</p>
+                                                </div>
+                                            </div>                                       
+                                        </div>
+                                        <div class="acc-radio item-del">
+                                            <label class="item-radio">
+                                                <input type="radio" name="delivery" value="4">
+                                                <div class="item-radio__txt">
+                                                    <span>Доставка в другие города</span>
+                                                    <span>При заказе на сумму менее 3000 рублей, стоимость доставки уточнит менеджер</span>
+                                                </div>
+                                            </label>
+                                            <div class="acc-radio__body">
+                                                <div class="page-content item-del__content">
+                                                    <p>При заказе на сумму менее 3000 рублей, стоимость доставки уточнит менеджер</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--fieldset-->
+                                    <div class="shadow-block order-form__fieldset">
+                                        <div class="mb-30 order-form__top">
+                                            <h3>Получатель</h3>
+                                            <button type="button" class="btn stroke-btn mod-open-btn" data-modal="recipient-modal">Редактировать<svg><use xlink:href="img/icons/sprite.svg#edit"></use></svg></button>
+                                        </div>
+                                        <h6 class="order-form__rec-name">Иванов Иван</h6>
+                                        <div class="order-form__rec-items">
+                                            <div class="item-contact">
+                                                <div class="item-contact__icon">
+                                                    <svg><use xlink:href="img/icons/sprite.svg#phone"></use></svg>
+                                                </div>
+                                                <span class="order-form__rec-tel">+7 900 800 600 77</span>
+                                            </div>
+                                            <div class="item-contact mail">
+                                                <div class="item-contact__icon">
+                                                    <svg><use xlink:href="img/icons/sprite.svg#mail"></use></svg>
+                                                </div>
+                                                <span class="order-form__rec-mail">marketing@mybex.ru</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!--fieldset-->
+                                    <div class="shadow-block order-form__fieldset">
+                                        <div class="mb-30 order-form__top">
+                                            <h3>Бонусы и промокод</h3>
+                                        </div>
+                                        <h5>Промокод</h5>
+                                        <div class="item-form item-form--promo success">
+                                            <input type="text" placeholder="Введите промокод" value="Promo">
+                                            <div class="item-form__error">Введен недействительный промокод</div>
+                                            <div class="item-form__success">Активирована скидка 5%</div>
+                                        </div>
+                                        <h5 class="item-tippy">Бонусы
+                                            <div class="tippy">
+                                                <svg><use xlink:href="img/icons/sprite.svg#tippy"></use></svg>
+                                                <p>Бьюти-бонусами можно оплатить часть очередной покупки из расчета 1 Бьюти-бонус = 1 рубль. Скидка может составить не более 30% от стоимости товара, подлежащего оплате.</p>
+                                            </div>
+                                        </h5>
+                                        <label class="item-radio">
+                                            <input type="radio" name="payments-way" value="1">                                       
+                                            <div class="item-radio__txt">
+                                                <span>Начислить бонусы <span class="h4 pink">200</span></span>
+                                            </div>
+                                        </label>
+                                        <label class="item-radio">
+                                            <input type="radio" name="payments-way" value="2">
+                                            <div class="item-radio__txt">
+                                                <span>Доступно для списания <span class="h4 pink">118</span></span><br>
+                                                <span>Всего Бьюти-бонусов<svg><use xlink:href="img/icons/sprite.svg#bonus"></use></svg>2000</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!--fieldset-->
+                                    <div class="shadow-block order-form__fieldset">
+                                        <div class="mb-30 order-form__top">
+                                            <h3>Способ оплаты</h3>
+                                        </div>
+                                        <label class="item-radio">
+                                            <input type="radio" name="payments-way" value="1">
+                                            <span>Наличными</span>
+                                        </label>
+                                        <label class="item-radio">
+                                            <input type="radio" name="payments-way" value="2">
+                                            <span>Банковской картой</span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--page__sticky-aside-->
+                        <aside class="page__sticky-aside">
+                            <div class="total-block">
+                                <div class="total-block__top">
+                                    <h6>Ваш заказ</h6>
+                                </div>
+                                <div class="total-block__body">
+                                    <div class="total-block__det">
+                                        <span>Товары 2 шт.</span>
+                                        <span class="rub">4 500</span>
+                                    </div>
+                                    <div class="total-block__det">
+                                        <span>Скидка</span>
+                                        <span class="rub red">- 647</span>
+                                    </div>
+                                    <div class="total-block__det">
+                                        <span>Доставка</span>
+                                        <span>Бесплатно</span>
+                                    </div>
+                                    <div class="total-block__det">
+                                        <span>Промокод</span>
+                                        <span class="rub red">211</span>
+                                    </div>
+                                    <div class="total-block__det">
+                                        <span>Бонусы</span>
+                                        <span class="rub red">118</span>
+                                    </div>
+                                </div>
+                                <div class="total-block__bottom">
+                                    <div class="total-block__total">
+                                        <span class="total-block__total-lbl">Итого</span>
+                                        <div class="total-block__price">
+                                            <del>12 147</del>
+                                            <span class="h4 rub">11 500</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn main-btn">Оформить заказ</button>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

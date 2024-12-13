@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Филлеры"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                 @@include("_breadcrumbs.html",{"page":"Филлеры"})
+                                 <div class="item-tippy">
+                                    <h1>Филлеры</h1>
+                                    <div class="tippy">
+                                        <svg><use xlink:href="img/icons/sprite.svg#tippy"></use></svg>
+                                        <p>Под филлерами (дермальными наполнителями) в эстетической медицине подразумеваются материалы, которые вводятся под кожу с помощью инъекций, предназначенные для восполнения утраченных объемов, коррекции морщин и моделирования формы.</p>
+                                    </div>
+                                </div>
+                            </div>                      
+                            <div class="section catalog catalog--main">
+                                <div class="mb-30 banner-block">
+                                    <div class="media-cover">
+                                        <picture>
+                                            <source srcset="img/catalog-banner.webp" media="(min-width: 575.98px)" type="image/webp">
+                                            <source srcset="img/catalog-banner.jpg" media="(min-width: 575.98px)">
+                                            <source srcset="img/catalog-banner-mob.webp" type="image/webp">
+                                            <source srcset="img/catalog-banner-mob.jpg"> 
+                                            <img src="img/catalog-banner.jpg" alt="Brand Name">
+                                        </picture>
+                                    </div>
+                                    <div class="banner-block__content">
+                                        <h2 class="h1">Brand Name</h2>
+                                        <a href="#" class="btn stroke-btn stroke-btn--light">Подробнее</a>
+                                    </div>
+                                </div>
+                                <!--cat-top-->
+                                <div class="mb-30 cat-top">
+                                    <form action="" class="cat-top__filter">
+                                        <div class="cat-top__items">
+                                            <div class="select-custom select-custom--manu">
+                                                <div class="select-custom__selected">
+                                                    <span>Производитель</span>
+                                                    <span class="filter-count"></span>
+                                                    <svg><use xlink:href="img/icons/sprite.svg#btn-down"></use></svg>
+                                                </div>
+                                                <div class="select-custom__body">
+                                                    <button type="button" class="btn-close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                                                    <div class="custom-scroll select-custom__options">
+                                                        <div class="h1 select-custom__lbl">Производитель</div>
+                                                        <div class="select-custom__option">
+                                                            <label class="item-checkbox">
+                                                                <input type="checkbox">
+                                                                <span>BFP Electronique</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-custom__option">
+                                                            <label class="item-checkbox">
+                                                                <input type="checkbox">
+                                                                <span>BFP Electronique</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="select-custom">
+                                                <div class="select-custom__selected"><span>Цена</span><svg><use xlink:href="img/icons/sprite.svg#btn-down"></use></svg></div>
+                                                <div class="select-custom__body">
+                                                    <button type="button" class="btn-close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                                                    <div class="custom-scroll select-custom__options">
+                                                        <div class="h1 select-custom__lbl">Цена</div>
+                                                        <div class="range-filter" data-min="6000" data-max="17000" data-start="6000" data-end="17000">
+                                                            <div class="range-filter__amounts">
+                                                              <div class="range-filter__amount">От <input type="number" min="6000" max="17000" placeholder="6000" value="6000" class="range-filter__start"></div>
+                                                              <span></span>
+                                                              <div class="range-filter__amount">До <input type="number" min="6000" max="17000" placeholder="17000" value="17000" class="range-filter__end"></div>
+                                                            </div>
+                                                            <div class="range-filter__slider"></div>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="select-custom">
+                                                <div class="select-custom__selected"><span>Наличие</span><svg><use xlink:href="img/icons/sprite.svg#btn-down"></use></svg></div>
+                                                <div class="select-custom__body">
+                                                    <button type="button" class="btn-close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                                                    <div class="custom-scroll select-custom__options">
+                                                        <div class="h1 select-custom__lbl">Наличие</div>
+                                                        <div class="select-custom__option">
+                                                            <label class="item-checkbox">
+                                                                <input type="radio" name="f-stock">
+                                                                <span>Только в наличии</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-custom__option">
+                                                            <label class="item-checkbox">
+                                                                <input type="radio" name="f-stock">
+                                                                <span>Ожидается поставка</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cat-top__sort">
+                                            <div class="select-custom select-sort">
+                                                <div class="select-custom__selected"><svg><use xlink:href="img/icons/sprite.svg#sort"></use></svg><span>По умолчанию</span></div>
+                                                <div class="select-custom__body">
+                                                    <button type="button" class="btn-close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                                                    <div class="custom-scroll select-custom__options">
+                                                        <div class="h1 select-custom__lbl">Сортировка</div>
+                                                        <div class="select-custom__option">
+                                                            <label class="item-radio">
+                                                                <input type="radio" name="f-sort" checked>
+                                                                <span>По умолчанию</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-custom__option">
+                                                            <label class="item-radio">
+                                                                <input type="radio" name="f-sort">
+                                                                <span>По возрастанию цены</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="select-custom__option">
+                                                            <label class="item-radio">
+                                                                <input type="radio" name="f-sort">
+                                                                <span>По убыванию цены</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="filter-selected">
+                                        <div class="filter-selected__items"></div>
+                                        <button type="button" class="filter-selected__reset">Очистить все<svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                                    </div>
+                                </div>
+                                <!--cat-wrapper-->
+                                <div class="cat-wrapper">
+                                    @@include("_card.html",{"nmb":1,"title":"Liquidimplant™ Labium 1 мл.", "fav": true, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":2,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":3,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": true})
+                                    @@include("_card.html",{"nmb":1,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":4,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":2,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": true})
+                                    @@include("_card.html",{"nmb":3,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":1,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":2,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": true})
+                                    @@include("_card.html",{"nmb":4,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":3,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": false})
+                                    @@include("_card.html",{"nmb":2,"title":"Liquidimplant™ Labium 1 мл.", "fav": false, "bonus": true, "price": true})
+                                </div>
+                                <!--cat-bottom-->
+                                <div class="cat-bottom">
+                                    @@include("_pagination.html", {"catalog": true})
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

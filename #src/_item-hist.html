@@ -1,0 +1,61 @@
+<!--item-hist-->
+@@if (received === true) {
+    <div class="accordion shadow-block item-hist" data-filter="received">
+}
+@@if (received === false) {
+    <div class="accordion shadow-block item-hist" data-filter="canceled">
+}
+    <div class="accordion__header item-hist__header">
+        <div class="item-hist__main">
+            <div class="item-hist__main-left">
+                <div class="item-hist__info">
+                    <h5>Заказ от 01 марта 2024</h5>
+                    @@if (received === true) {
+                        <span class="item-hist__status received">Получен</span>
+                    }
+                    @@if (received === false) {
+                        <span class="item-hist__status canceled">Отменён</span>
+                    }
+                </div>
+                <span class="item-hist__nmb">Заказ №2002</span>
+            </div>
+            <div class="rub item-hist__totalprice">70 100</div>
+        </div>
+        <svg><use xlink:href="img/icons/sprite.svg#btn-down"></use></svg>
+    </div>
+    <div class="accordion__body">
+        <div class="item-hist__body">
+            <div class="item-hist__details">
+                <div class="item-hist__det">
+                    <span>Способ доставки</span>
+                    <span>Доставка по Московской области</span>
+                </div>
+                <div class="item-hist__det">
+                    <span>Способ оплаты</span>
+                    <span>Банковской картой</span>
+                </div>
+                <div class="item-hist__det">
+                    <span>Стоимость доставки</span>
+                    <span class="rub">700</span>
+                </div>
+            </div>
+            <div class="item-hist__cols">
+                <a href="#" class="col-history">
+                    <div class="col-history__preview">
+                        <div class="media-contain">
+                            <img src="img/product-1-1-sm.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-history__content">
+                        <div class="col-history__info">
+                            <h5>Индивидуальное обучение тредлифтингу</h5>
+                            <span>Количество: 1</span>
+                        </div>
+                        <div class="rub col-history__price">60 000</div>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="item-hist__btn"><svg><use xlink:href="img/icons/sprite.svg#repeat"></use></svg>Повторить заказ</a>
+        </div>
+    </div>
+</div>

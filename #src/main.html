@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Главная"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": true, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page page--main">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <!--intro-->
+                        <section class="section intro">
+                            <div class="intro__row">
+                                <div class="item-bg item-intro">
+                                    <div class="media-cover">
+                                        <img src="img/intro-1.jpg" alt="">
+                                    </div>
+                                    <div class="item-bg__content">
+                                        <h1>Beauty Expert — магазин<br>для косметологов</h1>
+                                    </div>
+                                </div>
+                                <div class="item-bg item-intro">
+                                    <div class="media-cover">
+                                        <img src="img/intro-2.jpg" alt="">
+                                    </div>
+                                    <div class="item-bg__content">
+                                        <h3>Косметические<br>средства</h3>
+                                        <a href="#" class="btn stroke-btn stroke-btn--light">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="item-bg item-intro">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="media-cover">
+                                                    <img src="img/intro-3.jpg" alt="">
+                                                </div>
+                                                <div class="item-bg__content">
+                                                    <div class="item-bg__lbl">
+                                                        <span class="lbl-cert">Для сертифицированных специалистов</span>                                
+                                                    </div>
+                                                    <h2 class="h1">Филлеры<br>Brand name</h2>
+                                                    <a href="#" class="btn stroke-btn stroke-btn--light">Смотреть</a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="media-cover">
+                                                    <img src="img/intro-2.jpg" alt="">
+                                                </div>
+                                                <div class="item-bg__content">
+                                                    <div class="item-bg__lbl">
+                                                        <span class="lbl-cert">Для сертифицированных специалистов</span>                                
+                                                    </div>
+                                                    <h2 class="h1">Филлеры<br>Brand name2</h2>
+                                                    <a href="#" class="btn stroke-btn stroke-btn--light">Смотреть</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="item-bg item-intro">
+                                    <div class="media-cover">
+                                        <picture>
+                                            <source srcset="img/intro-4.webp" media="(min-width: 1400.98px)" type="image/webp">
+                                            <source srcset="img/intro-4.jpg" media="(min-width: 1400.98px)">
+                                            <source srcset="img/intro-4-m.webp" type="image/webp">
+                                            <source srcset="img/intro-4-m.jpg"> 
+                                            <img src="img/intro-4.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="item-bg__content">
+                                        <h3>LINERASE<br>коллаген</h3>
+                                        <a href="#" class="btn stroke-btn stroke-btn--light">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--services-->
+                        <section class="section services">
+                            <div class="mb-40 services__top">
+                                <h2>С продукцией Beauty Expert вы всегда <span>будете на шаг впереди</span> своих конкурентов</h2>
+                                <h4>Мы предлагаем традиционные и инновационные препараты лучших мировых брендов врачам-косметологам, которые ценят своих клиентов и дорожат имиджем и репутацией</h4>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="item-services">
+                                            <div class="item-services__img">
+                                                <div class="media-contain"><img src="img/service-1.png" alt="Мезотерапия"></div>
+                                            </div>
+                                            <h6>Мезотерапия</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="item-services">
+                                            <div class="item-services__img">
+                                                <div class="media-contain"><img src="img/service-2.png" alt="Тредлифтинг"></div>
+                                            </div>
+                                            <h6>Тредлифтинг</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="item-services">
+                                            <div class="item-services__img">
+                                                <div class="media-contain"><img src="img/service-3.png" alt="Реструктуризация"></div>
+                                            </div>
+                                            <h6>Реструктуризация</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="item-services">
+                                            <div class="item-services__img">
+                                                <div class="media-contain"><img src="img/service-4.png" alt="Ботулинотерапия"></div>
+                                            </div>
+                                            <h6>Ботулинотерапия</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">                                       
+                                        <a href="#" class="item-services">
+                                            <div class="item-services__img">
+                                               <div class="media-contain"><img src="img/service-5.png" alt="Контурная пластика"></div> 
+                                            </div>                                   
+                                            <h6>Контурная пластика</h6>
+                                        </a>                                      
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="item-services">
+                                            <div class="item-services__img">
+                                                <div class="media-contain"><img src="img/service-2.png" alt="Биорепарация"></div>
+                                            </div>                                          
+                                            <h6>Биорепарация</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="item-services">
+                                            <div class="item-services__img">
+                                                <div class="media-contain"><img src="img/service-3.png" alt="Реструктуризация"></div>
+                                            </div>                                            
+                                            <h6>Реструктуризация</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="item-services">
+                                            <div class="item-services__img">
+                                                <div class="media-contain"><img src="img/service-4.png" alt="Ботулинотерапия"></div>
+                                            </div>                                           
+                                            <h6>Ботулинотерапия</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nav-btns">
+                                    <button type="button" class="btn nav-btn nav-btn--prev"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></button>
+                                    <button type="button" class="btn nav-btn nav-btn--next"><svg><use xlink:href="img/icons/sprite.svg#btn-next"></use></svg></button>
+                                </div>
+                            </div>
+                        </section>
+                        <!--brands-->
+                        <section class="section brands">
+                            <div class="section-top">
+                                <h2 class="text-m">Бренды</h2>
+                                <a href="#" class="btn chevron-btn">Смотреть все<svg><use xlink:href="img/icons/sprite.svg#btn-next"></use></svg></a>
+                            </div>
+                            <div class="brands__row">
+                                <a href="#" class="item-bg item-brand">                                    
+                                    <div class="media-contain"><img src="img/brands-1.png" alt=""></div>
+                                </a>
+                                <a href="#" class="item-bg item-brand">
+                                    <div class="media-contain"><img src="img/brands-2.png" alt=""></div>
+                                </a>
+                                <a href="#" class="item-bg item-brand">
+                                    <div class="media-contain"><img src="img/brands-3.png" alt=""></div>
+                                </a>
+                                <a href="#" class="item-bg item-brand">
+                                    <div class="media-contain"><img src="img/brands-4.png" alt=""></div>
+                                </a>
+                                <a href="#" class="item-bg item-brand">
+                                    <div class="media-contain"><img src="img/brands-5.png" alt=""></div>
+                                </a>
+                                <a href="#" class="item-bg item-brand">
+                                    <div class="media-contain"><img src="img/brands-6.png" alt=""></div>
+                                </a>
+                                <a href="#" class="item-bg item-brand">
+                                    <div class="media-contain"><img src="img/brands-7.png" alt=""></div>
+                                </a>
+                            </div>
+                        </section>
+                        <!--popular-->
+                        <section class="mb-40 popular">
+                            <div class="section-top">
+                                <h2>Популярные товары</h2>
+                                <div class="nav-btns">
+                                    <button type="button" class="btn nav-btn nav-btn--prev"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></button>
+                                    <button type="button" class="btn nav-btn nav-btn--next"><svg><use xlink:href="img/icons/sprite.svg#btn-next"></use></svg></button>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__item">
+                                <div class="media-cover">
+                                    <picture>
+                                        <source srcset="img/popular.webp" media="(min-width: 1400.98px)" type="image/webp">
+                                        <source srcset="img/popular.jpg" media="(min-width: 1400.98px)">
+                                        <source srcset="img/popular-m.webp" media="(min-width: 767.98px)" type="image/webp">
+                                        <source srcset="img/popular-m.jpg" media="(min-width: 767.98px)">
+                                        <source srcset="img/popular-s.webp" type="image/webp">
+                                        <source srcset="img/popular-s.jpg"> 
+                                        <img src="img/popular.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="popular__item--content">
+                                    <h2 class="text-m">LINERASE<br>коллаген</h2>
+                                </div>
+                            </a>
+                            <div class="popular__cat">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                        <div class="swiper-slide">@@include("_card.html",{"nmb":2,"title":"Релатокс 100 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                        <div class="swiper-slide">@@include("_card.html",{"nmb":3,"title":"Гель КОЛЛОСТ 7% 1,5 мл", "fav": false, "bonus": false, "price": false})</div>
+                                        <div class="swiper-slide">@@include("_card.html",{"nmb":4,"title":"Канюли Silkann 22G/50mm (25 шт.)", "fav": false, "bonus": false, "price": false})</div>
+                                        <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </section>
+                        <!--main-rec-->
+                        <section class="section switch-block main-rec">
+                            <div class="section-top">
+                                <div class="tabs">
+                                    <span class="active" data-nav="">Рекомендуемые</span>
+                                    <span data-nav>Новинки</span>
+                                </div>
+                            </div>
+                            <div class="main-rec__swipers">
+                                <div class="swiper6 main-rec__block active" data-block="">
+                                    <div class="nav-btns">
+                                        <button type="button" class="btn nav-btn nav-btn--prev"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></button>
+                                        <button type="button" class="btn nav-btn nav-btn--next"><svg><use xlink:href="img/icons/sprite.svg#btn-next"></use></svg></button>
+                                    </div>
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": true})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":2,"title":"Релатокс 100 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":3,"title":"Гель КОЛЛОСТ 7% 1,5 мл", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":4,"title":"Канюли Silkann 22G/50mm (25 шт.)", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":2,"title":"Релатокс 100 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":3,"title":"Гель КОЛЛОСТ 7% 1,5 мл", "fav": false, "bonus": false, "price": false})</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper6 main-rec__block" data-block="">
+                                    <div class="nav-btns">
+                                        <button type="button" class="btn nav-btn nav-btn--prev"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></button>
+                                        <button type="button" class="btn nav-btn nav-btn--next"><svg><use xlink:href="img/icons/sprite.svg#btn-next"></use></svg></button>
+                                    </div>
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":2,"title":"Релатокс 100 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":3,"title":"Гель КОЛЛОСТ 7% 1,5 мл", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":4,"title":"Канюли Silkann 22G/50mm (25 шт.)", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":2,"title":"Релатокс 100 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                            <div class="swiper-slide">@@include("_card.html",{"nmb":3,"title":"Гель КОЛЛОСТ 7% 1,5 мл", "fav": false, "bonus": false, "price": false})</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--partners-->
+                        <section class="section partners">
+                            <div class="section-top">
+                                <h2 class="text-m">Нам доверяют</h2>
+                                <div class="nav-btns">
+                                    <button type="button" class="btn nav-btn nav-btn--prev"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></button>
+                                    <button type="button" class="btn nav-btn nav-btn--next"><svg><use xlink:href="img/icons/sprite.svg#btn-next"></use></svg></button>
+                                </div>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-1.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-2.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-3.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-4.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-5.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-6.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-1.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-2.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-3.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-4.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-5.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-6.png" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="media-contain"><img src="img/partner-1.png" alt=""></div></div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--edu-->
+                        <section class="section edu">
+                            <div class="edu__row">
+                                <div class="item-bg item-edu">
+                                    <div class="media-cover">
+                                        <picture>
+                                            <source srcset="img/edu-1.webp" media="(min-width: 575.98px)" type="image/webp">
+                                            <source srcset="img/edu-1.jpg" media="(min-width: 575.98px)">
+                                            <source srcset="img/edu-1-mob.webp" type="image/webp">
+                                            <source srcset="img/edu-1-mob.jpg"> 
+                                            <img src="img/edu-1.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="item-bg__content">
+                                        <div class="item-edu__top">
+                                            <h2 class="h1">Учебный центр<br>Beauty Expert</h2>
+                                            <div class="item-bg__lbl">
+                                                <span class="lbl-teacher">Курсы косметолога</span>
+                                                <span class="lbl-medal-star">Индивидуальное обучение</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn stroke-btn stroke-btn--light mod-open-btn" data-modal="feedback-modal">Заказать звонок</button>
+                                    </div>
+                                </div>
+                                <div class="item-bg item-edu item-edu--contact">
+                                    <div class="item-bg__content">
+                                        <h3>Запись на обучение по телефонам:</h3>
+                                        <div class="item-edu__contacts">
+                                            <div class="item-contact">
+                                                <span class="item-contact__icon"><svg><use xlink:href="img/icons/sprite.svg#phone"></use></svg></span>
+                                                <a href="tel:84959891819">+7 495 989-18-19</a></div>
+                                            <div class="item-contact">
+                                                <span class="item-contact__icon"><svg><use xlink:href="img/icons/sprite.svg#phone"></use></svg></span>
+                                                <a href="tel:88003331819">8 800 333-18-19</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="item-bg item-edu">
+                                    <div class="media-cover">
+                                        <img src="img/edu-2.jpg" alt="">
+                                    </div>
+                                    <div class="item-bg__content">
+                                        <div class="item-edu__top">
+                                            <h3>Обучающие материалы</h3>
+                                            <div class="item-bg__lbl">
+                                                <span class="lbl-teacher"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="item-bg item-edu">
+                                    <div class="media-cover">
+                                        <img src="img/edu-3.jpg" alt="">
+                                    </div>
+                                    <div class="item-bg__content">
+                                        <div class="item-edu__top">
+                                            <h3>Литература</h3>
+                                            <div class="item-bg__lbl">
+                                                <span class="lbl-book"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="item-bg item-edu">
+                                    <div class="media-cover">
+                                        <img src="img/edu-4.jpg" alt="">
+                                    </div>
+                                    <div class="item-bg__content">
+                                        <div class="item-edu__top">
+                                            <h3>Тренинги</h3>
+                                            <div class="item-bg__lbl">
+                                                <span class="lbl-note"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html', {"main": true})
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

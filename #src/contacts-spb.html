@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Контакты"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <!--page__content-->
+                    <div class="page__content">  
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Контакты"})
+                            <h1>Контакты</h1>
+                        </div>                    
+                        <!--contacts-->
+                        <div class="section contacts">
+                            <div class="mb-30 banner-block">
+                                <div class="media-cover"><img src="img/contacts-banner.jpg" alt=""></div>
+                                <div class="banner-block__content">
+                                    <h2 class="h1">Компания Beauty Expert (Бьюти Эксперт) — ваш надежный поставщик товаров и услуг в сфере эстетической и антивозрастной медицины</h2>
+                                </div>
+                            </div>
+                            <div class="switch-block">
+                                <div class="contacts__tabs">
+                                    <div class="mb-30 tabs">
+                                        <a href="contacts-moscow.html">Москва</a>
+                                        <a href="contacts-spb.html" class="active">Санкт-Петербург</a>                                    
+                                    </div>
+                                </div>
+                                <div class="contacts__block">
+                                    <div class="contacts__row">
+                                        <div class="shadow-block">
+                                            <div class="page-content">
+                                                <h3>Общая информация</h3>
+                                                <h6><strong>Адрес:</strong></h6>
+                                                <p>191015, г. Санкт-Петербург, улица 9-я Советская, дом 4-6, литер А, офис 226</p>
+                                                <a target="_blank" href="https://yandex.ru/maps/org/beauty_expert/21039982025/?ll=30.373387%2C59.938126&utm_source=share&z=19.11" class="btn main-btn main-btn--light">Посмотреть на карте</a>
+                                                <h6><strong>Режим работы:</strong></h6>
+                                                <p>ПН-ПТ с 10:00 до 18:30</p>
+                                                <h6><strong>Контакты:</strong></h6>
+                                                <p>Телефоны: <strong>+7 495 989-18-19, 8 800 333-18-19</strong><br>
+                                                (звонок по России бесплатный)<br>
+                                                Электронная почта: info@mybex.ru</p>
+                                            </div>
+                                        </div>
+                                        <div class="shadow-block">
+                                            <div class="page-content">
+                                                <h3>Как добраться</h3>
+                                                <h6>Как добраться (От метро пешком)</h6>
+                                                <p>м. Площадь Восстания (в метро по указателю «Выход на ул. Восстания и Невский проспект»)</p>
+                                                <p>Выйдя из метро, переходите на противоположную сторону Лиговского проспекта и двигаетесь в направлении БКЗ «Октябрьский»</p>
+                                                <p>Проходите мимо БКЗ «Октябрьский», далее следуете через Некрасовский сад, переходите ул. Некрасова.</p>
+                                                <p>Затем сразу же переходите Греческий проспект, поворачиваете налево, двигаетесь 60 метров до ул. 9-я Советская.</p>
+                                                <p>Переходим улицу и поворачиваем направо, двигаемся 170 метров до Фуражного переулка.</p>
+                                                <p>Переходим его и через 20 метров оказываемся перед большими деревянными дверями БЦ «Гр.Ив.»</p>
+                                                <a target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.373367%2C59.938175&mode=routes&rtext=59.931603%2C30.360158~59.938104%2C30.373377&rtt=pd&ruri=~&source=serp_navig&z=20" class="btn main-btn main-btn--light">Посмотреть маршрут</a>
+                                                <h6>Как добраться (От метро на общественном транспорте)</h6>
+                                                <p>Выйдя из метро, переходите на противоположную сторону Невского проспекта. Поворачиваете направо и следуете 200 метров до остановки общественного транспорта.</p>
+                                                <p class="txt-line">Автобус: 181<br>
+                                                    Троллейбусы: 11, 5, 7</p>
+                                                <p>Доезжаете до остановки «Сквер Галины Старовойтовой»<br>
+                                                   Выходите из общественного транспорта, переходите Суворовский проспект, идёте налево и, не переходя дорогу, поворачиваете направо, и через 30 метров оказываемся перед большими деревянными дверями БЦ «Гр.Ив.».</p>
+                                                <a target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.364620%2C59.937029&mode=routes&rl=30.374030%2C59.937969~-0.000618%2C0.000144~0.001666%2C-0.000279&rtext=59.931603%2C30.360158~59.938104%2C30.373377&rtn=1&rtt=mt&ruri=~&source=serp_navig&z=14" class="btn main-btn main-btn--light">Посмотреть маршрут</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Отзывы"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <!--page__content-->
+                    <div class="page__content">  
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Отзывы"})
+                            <h1>Отзывы</h1>
+                            <div class="select-custom select-sort">
+                                <div class="select-custom__selected"><svg><use xlink:href="img/icons/sprite.svg#sort"></use></svg><span>По умолчанию</span></div>
+                                <div class="select-custom__body">
+                                    <button type="button" class="btn-close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                                    <div class="custom-scroll select-custom__options">
+                                        <div class="h1 select-custom__lbl">Сортировка</div>
+                                        <div class="select-custom__option">
+                                            <label class="item-radio">
+                                                <input type="radio" name="f-sort" checked>
+                                                <span>По умолчанию</span>
+                                            </label>
+                                        </div>
+                                        <div class="select-custom__option">
+                                            <label class="item-radio">
+                                                <input type="radio" name="f-sort">
+                                                <span>Сначала новые</span>
+                                            </label>
+                                        </div>
+                                        <div class="select-custom__option">
+                                            <label class="item-radio">
+                                                <input type="radio" name="f-sort">
+                                                <span>Сначала старые</span>
+                                            </label>
+                                        </div>
+                                        <div class="select-custom__option">
+                                            <label class="item-radio">
+                                                <input type="radio" name="f-sort">
+                                                <span>С высокой оценкой</span>
+                                            </label>
+                                        </div>
+                                        <div class="select-custom__option">
+                                            <label class="item-radio">
+                                                <input type="radio" name="f-sort">
+                                                <span>С низкой оценкой</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                        <!--reviews-->
+                        <div class="section reviews">
+                            <div class="reviews__row">
+                                <div class="reviews__main">
+                                    <div class="reviews__items">
+                                        @@include("_item-review.html",{"name":"Мария"})
+                                        @@include("_item-review.html",{"name":"Лидия"})
+                                        @@include("_item-review.html",{"name":"Елена"})
+                                        @@include("_item-review.html",{"name":"Елена"})
+                                    </div>
+                                    <!--cat-bottom-->
+                                    <div class="cat-bottom">
+                                        @@include("_pagination.html", {"catalog": false})
+                                    </div>
+                                </div>
+                                <!--reviews-aside-->
+                                <aside class="shadow-block reviews-aside">
+                                    <div class="reviews-aside__top">
+                                        <div class="reviews-aside__total">4.9</div>
+                                        <div class="reviews-aside__info">
+                                            <div class="rating">
+                                                <span class="rating__container light">
+                                                    <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                </span>
+                                                <span class="rating__container dark">
+                                                    <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                </span>
+                                            </div>
+                                            <div class="reviews-aside__count">277 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-aside__body">
+                                        <h5>Отзывы с оценкой</h5>
+                                        <div class="reviews-aside__items">
+                                            <label class="reviews-aside__check">
+                                                <div class="item-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </div>
+                                                <div class="rating">
+                                                    <span class="rating__container light">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                    <span class="rating__container dark">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                </div>
+                                                <div class="reviews-aside__check-count">232 отзывов</div>
+                                            </label>
+                                            <label class="reviews-aside__check">
+                                                <div class="item-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </div>
+                                                <div class="rating">
+                                                    <span class="rating__container light">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                    <span class="rating__container dark">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                </div>
+                                                <div class="reviews-aside__check-count">23 отзывов</div>
+                                            </label>
+                                            <label class="reviews-aside__check">
+                                                <div class="item-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </div>
+                                                <div class="rating">
+                                                    <span class="rating__container light">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                    <span class="rating__container dark">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                </div>
+                                                <div class="reviews-aside__check-count">23 отзывов</div>
+                                            </label>
+                                            <label class="reviews-aside__check">
+                                                <div class="item-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </div>
+                                                <div class="rating">
+                                                    <span class="rating__container light">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                    <span class="rating__container dark">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                </div>
+                                                <div class="reviews-aside__check-count">23 отзывов</div>
+                                            </label>
+                                            <label class="reviews-aside__check">
+                                                <div class="item-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </div>
+                                                <div class="rating">
+                                                    <span class="rating__container light">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                    <span class="rating__container dark">
+                                                        <svg><use xlink:href="img/icons/sprite.svg#star-5"></use></svg>
+                                                    </span>
+                                                </div>
+                                                <div class="reviews-aside__check-count">23 отзывов</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn main-btn mod-open-btn" data-modal="review-modal">Добавить отзыв</button>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

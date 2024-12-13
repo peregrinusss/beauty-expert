@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Контакты"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <!--page__content-->
+                    <div class="page__content">  
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Контакты"})
+                            <h1>Контакты</h1>
+                        </div>                    
+                        <!--contacts-->
+                        <div class="section contacts">
+                            <div class="mb-30 banner-block">
+                                <div class="media-cover"><img src="img/contacts-banner.jpg" alt=""></div>
+                                <div class="banner-block__content">
+                                    <h2 class="h1">Компания Beauty Expert (Бьюти Эксперт) — ваш надежный поставщик товаров и услуг в сфере эстетической и антивозрастной медицины</h2>
+                                </div>
+                            </div>
+                            <div class="contacts__tabs">
+                                <div class="mb-30 tabs">
+                                    <a href="contacts-moscow.html" class="active">Москва</a>
+                                    <a href="contacts-spb.html">Санкт-Петербург</a>                                    
+                                </div>
+                            </div>
+                            <div class="contacts__block">
+                                <div class="contacts__row">
+                                    <div class="shadow-block">
+                                        <div class="page-content">
+                                            <h3>Общая информация</h3>
+                                            <h6><strong>Адрес:</strong></h6>
+                                            <p>107076, г. Москва, Стромынский переулок, д.6 (м. Сокольники)</p>
+                                            <a target="_blank" href="https://yandex.ru/maps/org/klinika_esteticheskoy_meditsiny_beauty_expert/1700398732/?ll=37.693940%2C55.792060&utm_source=share&z=17" class="btn main-btn main-btn--light">Посмотреть на карте</a>
+                                            <h6><strong>Режим работы:</strong></h6>
+                                            <p>ПН-ПТ с 10:00 до 18:30</p>
+                                            <h6><strong>Контакты:</strong></h6>
+                                            <p>Телефоны: <strong>+7 495 989-18-19, 8 800 333-18-19</strong>
+                                            (звонок по России бесплатный)<br>
+                                            Электронная почта: info@mybex.ru</p>
+                                        </div>
+                                    </div>
+                                    <div class="shadow-block">
+                                        <div class="page-content">
+                                            <h3>Как добраться</h3>
+                                            <p>м. Сокольники. Выйдя из метро, переходите на противоположную сторону улицы Стромыкина. Проезжаете на транспорте до остановки «ул. Короленко — Социальный университет» (2 остановки)</p>
+                                            <p class="txt-line">Автобусы: 265, 716, 78<br>
+                                                Маршрутки: 716, 269 м, 32 м, 516 м, 570 м<br>
+                                                Трамваи: 7, 13<br>
+                                                Троллейбусы: 41, 32, 14</p>
+                                            <p>От остановки идете до следующего светофора (Стромынский переулок) и поворачиваете направо до 2-й Боевской улицы и на пересечении со Стромынским переулком будет расположено здание Клубного дома Tivoli</p>
+                                            <p>С торца этого здания расположен вход в Учебный центр «Бьюти Эксперт».</p>
+                                            <a target="_blank" href="https://yandex.ru/maps/213/moscow/?ll=37.687606%2C55.791601&mode=routes&rtext=55.789200%2C37.679706~55.792316%2C37.694010&rtt=mt&ruri=ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3Dstation__9858908~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc0Njg0ORJG0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCh0YLRgNC-0LzRi9C90YHQutC40Lkg0L_QtdGA0LXRg9C70L7QuiwgNiIKDarGFkIVVStfQg%2C%2C&utm_source=share&z=15.18" class="btn main-btn main-btn--light">Посмотреть маршрут</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

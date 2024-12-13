@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Поставщикам"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Поставщикам"})
+                            <h1>Поставщикам</h1>
+                            <p>Приглашаем к сотрудничеству производителей и поставщиков товаров для косметологии. Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+                        </div> 
+                        <div class="suppliers shadow-block">
+                            <form action="" class="form" onsubmit="event.preventDefault();formSuccess(this)">
+                                <div class="item-form">
+                                    <input type="text" placeholder="ФИО*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" placeholder="Организация*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" placeholder="Должность*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="tel" placeholder="Телефон*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" placeholder="Email*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" placeholder="Ссылка на сайт с описанием*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" placeholder="Регионы для размещения препаратов*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" placeholder="Название препарата*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" placeholder="Описание препарата*">
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="item-form file-form">
+                                    <label>
+                                        <input type="file" accept=".png,.jpg,.jpeg,.gif,.bmp,.pdf,.txt,.rtf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.ods,.odp">
+                                        <span>Документ об образовании или лицензия*</span>
+                                    </label>
+                                    <div class="file-form__items"></div>
+                                    <div class="item-form__error"></div>
+                                </div>
+                                <div class="form__footer">
+                                    <label class="item-checkbox">
+                                        <input type="checkbox">
+                                        <span>Подтверждаю, что ознакомлен(-а) с <a href="#" target="_blank">Политикой конфиденциальности</a></span>
+                                    </label>
+                                    <button type="submit" class="btn main-btn">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

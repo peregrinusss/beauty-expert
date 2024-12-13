@@ -1,0 +1,39 @@
+.preloader {
+    background: $light-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    transition: all 1s ease-out;
+    &__logo {
+        width: 280px;
+        img {
+           animation: pulse 4s linear infinite both;
+        }  
+        @media (max-width: $bp1) {
+            width: 240px;
+        }  
+        @media (max-width: $bp2) {
+            width: 200px;
+        }  
+        @media (max-width: $bp4) {
+            width: 160px;
+        }   
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

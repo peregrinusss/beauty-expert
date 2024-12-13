@@ -1,0 +1,98 @@
+.search-form {
+    display: flex;
+    position: relative;
+    input {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray;
+    }
+    .main-btn {
+        flex: 0 0 157px;
+        margin-left: 10px;
+    }
+    &.show-results {
+        .search-form__result {
+            display: block;
+        }
+    }
+    &__inner {
+        flex: 1;
+        padding: 11px 15px;
+        border: 1px solid $blue;
+        border-radius: 100px;
+        background: $white;
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        flex: 0 0 15px;
+        width: 15px;
+        height: 16px;
+        stroke: $blue;  
+        margin-right: 12px;  
+    }
+    &__reset {
+        flex: 0 0 10px;
+        width: 10px;
+        height: 10px;
+        visibility: hidden;
+        opacity: 0;
+        svg {
+            fill: $maincolor;
+            width: 100%;
+            height: 100%;
+        }
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            margin-left: 12px;
+        }
+    }
+    &__result {
+        padding: 4px 0;
+        border-radius: 20px;
+        background: $white;
+        position: absolute;
+        top: calc(100% + 10px);
+        width: 100%;
+        transition: all .3s linear;
+        display: none;
+        a {
+            display: block;
+            font-weight: 500;
+            color: $maincolor;
+            padding: 8.5px 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0
+            };
+            &:hover {
+                color: $white;
+                background: $blue
+            }
+        }
+    }
+    @media (max-width: $bp4) {
+        .main-btn  {
+            flex: 0 0 85px;
+        }
+        &__inner {
+            padding: 9px 15px;
+        }
+    }
+}
+.search-p {
+    .search-form {
+        margin-bottom: 40px;
+    }
+    .search-form__inner {
+        border-radius: 16px;
+        background: #F7F7F7;
+        border-color: transparent;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "III Черноморский конгресс по пластической хирургии и косметологии"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                @@include("_breadcrumbs-2.html",{"page1": "Новости","page2":"III Черноморский конгресс по пластической хирургии и косметологии"})
+                                <h1>III Черноморский конгресс по пластической хирургии и косметологии</h1>
+                            </div>                      
+                            <div class="section news-p">
+                                <div class="news-p__img">
+                                    <picture>
+                                        <source srcset="img/news-2-1.webp" media="(min-width: 575.98px)" type="image/webp">
+                                        <source srcset="img/news-2-1.jpg" media="(min-width: 575.98px)">
+                                        <source srcset="img/news-2-1-mob.webp" type="image/webp">
+                                        <source srcset="img/news-2-1-mob.jpg">
+                                        <img src="img/news-2-1.jpg" alt="III Черноморский конгресс по пластической хирургии и косметологии">
+                                    </picture>
+                                </div> 
+                                <div class="news-p__date">20.03.2024</div>                          
+                                <div class="page-content">
+                                    <p>Уважаемые коллеги! Дорогие друзья!</p>
+                                    <p>С радостью сообщаем вам, что наша компания является партнёром III Черноморского конгресса по пластической хирургии и косметологии, который состоится 23–25 апреля 2021 в солнечном городе Геленджик!</p>
+                                    <p>Вас ждёт курс косметологии: «Всё о комбинации методик от экспертов эстетической медицины. Комплексные программы коррекции внешности».</p>
+                                    <h5>Курс по пластической хирургии:</h5>
+                                    <p>День 1. «Риносептопластика»;<br>День 2. «Послеродовое восстановление (Маммопластика. Абдоминопластика)»;</p>
+                                    <p>Также в рамках мероприятия состоится заседание профильной комиссии по пластической хирургии, председателем которого выступит Мантурова Наталья Евгеньевна.</p>
+                                    <p>Помимо докладов от профессионалов и красочных презентаций вас ждут онлайн-трансляции пластических операций, марафон живых инъекций, ответы спикеров на вопросы по теме докладов и выставка продукции и оборудования от партнёров мероприятия.</p>
+                                    <p>Кроме того, с докладом на тему «Слагаемые эффективности Anchor–тредлифтинга, комплексное лечение возрастных изменений лица» выступит ведущий тренер Учебного центра Beauty Expert Academy — Старкова Елена Юрьевна.</p>
+                                    <p>Приглашаем Вас принять участие в одном из важнейших событий в сфере эстетической медицины!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="section shadow-block swiper3 news-latest">
+                            <div class="section-top">
+                                <h2>Последние новости</h2>
+                                <div class="nav-btns">
+                                    <button type="button" class="btn nav-btn nav-btn--prev"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></button>
+                                    <button type="button" class="btn nav-btn nav-btn--next"><svg><use xlink:href="img/icons/sprite.svg#btn-next"></use></svg></button>
+                                </div>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">@@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "Мы запустили онлайн - магазин в Telegram"})</div>
+                                    <div class="swiper-slide">@@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "Мы запустили онлайн - магазин в Telegram"})</div>
+                                    <div class="swiper-slide">@@include("_item-news.html", {"nmb": 2, "title": "III Черноморский конгресс по пластической хирургии и косметологии", "txt": "Мы запустили онлайн - магазин в Telegram"})</div>
+                                    <div class="swiper-slide">@@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "Мы запустили онлайн - магазин в Telegram"})</div>
+                                    <div class="swiper-slide">@@include("_item-news.html", {"nmb": 2, "title": "Онлайн — магазин теперь в Telegram", "txt": "С радостью сообщаем вам, что наша компания является партнёром III Черноморского конгресса по пластической хирургии"})</div>
+                                
+                                </div>                                  
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Профиль"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page page-acc">
+                    @@include("_profile-aside.html")
+                    <div class="page__content">
+                        <div class="page__top shadow-block">
+                            @@include("_breadcrumbs.html",{"page":"Личный кабинет"})
+                            <div class="back-top">
+                                <a href="account.html" class="back-btn"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></a>
+                                <h1>Профиль</h1>
+                            </div>
+                        </div>                      
+                        <section class="section profile-p shadow-block">
+                            <div class="section-top">
+                                <h3>Личные данные</h3>
+                                <button type="button" class="btn stroke-btn mod-open-btn" data-modal="profile-modal">Редактировать<svg><use xlink:href="img/icons/sprite.svg#edit"></use></svg></button>
+                            </div>
+                            <div class="profile-p__sec">
+                                <h5>Иванов Иван Иванович</h5>
+                                <div class="mb-40 profile-p__items">
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#phone"></use></svg>
+                                        </div>
+                                        <span>+7 900 800 600 77</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#mail"></use></svg>
+                                        </div>
+                                        <span>marketing@mybex.ru</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#location"></use></svg>
+                                        </div>
+                                        <span>Москва</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#address"></use></svg>
+                                        </div>
+                                        <span>ул. Маросейка, 20, кв. 100, эт. 8</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#education"></use></svg>
+                                        </div>
+                                        <span>Высшее медицинское</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-p__sec">
+                                <h5>Документ об образовании</h5>
+                                <form class="edu-profile">
+                                    <div class="item-form file-form">
+                                        <div class="file-form__items">
+                                            <div class="file-form__item">
+                                                <span class="file-form__del edu-profile__del"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></span>
+                                                <div class="media-contain"><img src="img/cert.png" alt=""></div>
+                                            </div>
+                                            <label class="edu-profile__add">
+                                                <input type="file" accept=".png,.jpg,.jpeg,.gif,.bmp,.pdf,.txt,.rtf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.ods,.odp">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+                                                    <path d="M14.666 22H29.3327" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M22 29.3307V14.6641" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16.4993 40.3307H27.4993C36.666 40.3307 40.3327 36.6641 40.3327 27.4974V16.4974C40.3327 7.33073 36.666 3.66406 27.4993 3.66406H16.4993C7.33268 3.66406 3.66602 7.33073 3.66602 16.4974V27.4974C3.66602 36.6641 7.33268 40.3307 16.4993 40.3307Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <div class="item-form__error"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

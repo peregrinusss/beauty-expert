@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Корзина"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page page--sticky">
+                    <!--page__sticky-->
+                    <div class="page__sticky">
+                        <!--page__sticky-content-->
+                        <div class="shadow-block page__sticky-content">
+                            <div class="page__top">
+                                @@include("_breadcrumbs.html",{"page":"Корзина"})
+                                <h1>Корзина</h1>
+                            </div>                        
+                            <!--cart-->
+                            <div class="section cart">
+                                <form action="" class="cart__form">
+                                    <div class="mb-30 cart__top">
+                                        <label class="item-checkbox cart-select-all">
+                                            <input type="checkbox" checked>
+                                            <span>Выбрать все</span>
+                                        </label>
+                                        <button type="button" class="cart__del mod-open-btn" data-modal="del-modal"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg>Очистить корзину</button>
+                                    </div>
+                                    <div class="cart__items">
+                                        @@include("_item-cart.html",{"fav": false, "att": false})
+                                        @@include("_item-cart.html",{"fav": true, "att": false})
+                                        @@include("_item-cart.html",{"fav": false, "att": true})
+                                    </div>
+                                </form>
+                            </div>
+                        </div>  
+                        <!--page__sticky-aside-->
+                        <aside class="page__sticky-aside">
+                            <div class="total-block">
+                                <div class="total-block__top">
+                                    <h6>Ваш заказ</h6>
+                                </div>
+                                <div class="total-block__body">
+                                    <div class="total-block__det">
+                                        <span>Товары 2 шт.</span>
+                                        <span class="rub">4 500</span>
+                                    </div>
+                                    <div class="total-block__det">
+                                        <span>Скидка</span>
+                                        <span class="rub red">- 647</span>
+                                    </div>
+                                </div>
+                                <div class="total-block__bottom">
+                                    <div class="total-block__total">
+                                        <span class="total-block__total-lbl">Итого</span>
+                                        <div class="total-block__price">
+                                            <del>12 147</del>
+                                            <span class="h4 rub">11 500</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn main-btn">Оформить заказ</button>
+                                </div>
+                            </div>
+                        </aside>                                                               
+                    </div>    
+                    <!--page__content-->                
+                    <div class="page__content">
+                        <!--other-cat-->
+                        <section class="swiper4 shadow-block other-cat">
+                            <div class="section-top">
+                                <h2>Смотрите также</h2>
+                                <div class="nav-btns">
+                                    <button type="button" class="btn nav-btn nav-btn--prev"><svg>
+                                            <use xlink:href="img/icons/sprite.svg#btn-prev"></use>
+                                        </svg></button>
+                                    <button type="button" class="btn nav-btn nav-btn--next"><svg>
+                                            <use xlink:href="img/icons/sprite.svg#btn-next"></use>
+                                        </svg></button>
+                                </div>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false,
+                                        "bonus": false, "price": false})</div>
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":2,"title":"Релатокс 100 ед.", "fav": false,
+                                        "bonus": false, "price": false})</div>
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":3,"title":"Гель КОЛЛОСТ 7% 1,5 мл", "fav":
+                                        false, "bonus": false, "price": false})</div>
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":4,"title":"Канюли Silkann 22G/50mm (25 шт.)",
+                                        "fav": false, "bonus": false, "price": false})</div>
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false,
+                                        "bonus": false, "price": false})</div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

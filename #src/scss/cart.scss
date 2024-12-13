@@ -1,0 +1,390 @@
+.item-cart {
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    gap: 24px;
+    align-items: start;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .info-block {
+        padding: 8px;
+        border-radius: 8px;
+        margin-top: 12px;
+        p {
+            font-size: 10px;
+           }
+        &__top {
+           grid-template-columns: 29px 1fr; 
+        }
+        &__icon {
+            height: 29px;
+            padding: 7px;
+            border-radius: 4px;
+        }
+    }
+    .js-minus.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    .media-contain {
+        height: 100%;
+        mix-blend-mode: darken;
+        transform: translate3d(0,0,0);
+    }
+    &__left {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 24px;
+        align-items: center;
+    }
+    &__preview {
+        display: block;
+        height: 100px;
+        padding: 10px;
+        border-radius: 12px;
+        background: #fafafa;
+    }
+    &__content {
+        align-self: center;
+        display: grid;
+        grid-template-columns: minmax(auto, 360px) 1fr 178px 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+    &__info {
+        h5 {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 4px;
+            a {
+                color: $maincolor;
+            }
+        }
+        h6 {
+            font-size: 12px;
+            font-weight: 400;
+            color: $gray;
+            margin-bottom: 12px;
+        }
+    }
+    &__action {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -4px;
+        button {
+            font-size: 14px;
+            font-weight: 500;
+            color: $blue;
+            display: inline-flex;
+            align-items: center;
+            margin: 4px;
+            svg {
+                flex: 0 0 20px;
+                width: 20px;
+                height: 20px;
+                fill: none;
+                stroke: $blue;
+                margin-right: 4px;
+            }
+        }
+    }
+    &__price {
+        font-size: 12px;
+        text-align: center;
+    }
+    &__total {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: right;
+        .item-cart__price {
+            display: none;
+        }
+        del {
+            font-weight: 600;
+            color: $gray;
+        }
+    }
+    &__totalprice {
+        font-weight: 600;
+        flex: 1 1 100%;
+        margin-bottom: 4px;
+    }
+    &__bonus {
+        font-size: 12px;
+        font-weight: 500;
+        color: #ff1d61;
+        padding: 1px 6px 1px 20px;
+        border-radius: 100px;
+        background: url(../img/icons/bonus.svg) center left 4px / 12px 12px no-repeat, rgba(255, 29, 97, .1);
+        white-space: nowrap;
+        margin-left: 4px;
+    }
+    @media (max-width: $bp1) {
+        &__info {
+            h5, h6 {
+                max-width: 230px;
+            }
+        }
+        &__content {
+            grid-template-columns: minmax(auto, 274px) 1fr 146px 1fr;
+        }
+    }
+    @media (max-width: $bp2) {
+        margin-bottom: 30px;
+        .quantity {
+            max-width: 176px;
+        }
+        .info-block {
+            max-width: 300px;
+        }
+        &__content {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        &__info {
+            h5, h6 {
+                max-width: 100%;
+            }
+        }
+        &__price {
+            color: $gray;
+            display: none;
+            margin-left: 4px;
+            margin-right: 10px;
+        }
+        &__total {
+            grid-row: 1/2;
+            .item-cart__price {
+                display: block;
+            }
+        }
+        &__totalprice {
+            order: 1;
+            flex: 0 0 auto;
+            margin-left: auto;
+        }
+    }
+    @media (max-width: $bp4) {
+        grid-template-columns: 113px 1fr;
+        gap: 12px;
+        &__left {
+            gap: 12px;
+        }
+        &__action button {
+            font-size: 0;
+            margin-right: 20px;
+            svg {
+                margin: 0;
+            }
+        }
+    }
+    @media (max-width: $bp7) {
+        &__totalprice {
+            flex: 1 1 100%;
+        }
+        &__price {
+            margin-right: 0;
+        }
+    } 
+}
+.order-cart {
+    display: grid;
+    grid-template-columns: 81px 1fr;
+    align-items: start;
+    gap: 24px;
+    margin-bottom: 32px;
+    &__preview {
+        height: 100px;
+        padding: 10px;
+        border-radius: 12px;
+        background: #fafafa;
+        .media-contain {
+            height: 100%;
+            mix-blend-mode: darken;
+            transform: translate3d(0,0,0);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__info {
+        align-self: center;
+    }
+    &__title {
+        font-size: 12px;
+        a {
+            color: $maincolor;
+        }
+    }
+    &__count {
+        font-size: 12px;
+        color: $gray;
+        margin-top: 4px;
+    }
+    &__det {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+    }
+    &__totalprice {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__old-price {
+        font-size: 16px;
+        font-weight: 500;
+        color: $gray;
+        margin-left: 4px;
+    }
+    &__bonus {
+        font-size: 12px;
+        font-weight: 500;
+        color: $pink;
+        white-space: nowrap;
+        border-radius: 100px;
+        padding: 3px 8px 3px 24px;
+        background:url(../img/icons/bonus.svg) center left 6px / 12px 12px no-repeat, rgba($pink, .1);
+    }
+}
+.js-cart {
+    &__btns {
+        display: flex;
+        margin: -5px;
+        .btn {
+            flex: 1;
+            margin: 5px;
+        }
+    }
+}
+.cart {
+    &__top {
+        color: $gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__del {
+        color: $gray;
+        display: flex;
+        align-items: center;
+        svg {
+            fill: $gray;
+            flex: 0 0 15px;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    }
+    @media (max-width: $bp1) {
+        margin-bottom: 60px;
+        &__del {
+            svg {
+                flex: 0 0 11px;
+                width: 11px;
+                height: 11px;
+            }
+        }
+    }
+}
+.cart-empty {
+    min-height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    svg {
+        stroke: $gray;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        max-width: 340px;
+        margin-bottom: 20px;
+    }
+    .main-btn {
+        width: 100%;
+        max-width: 240px;
+    }
+    @media (max-width: $bp2) {
+        .main-btn {
+            max-width: 200px;
+        }
+    }
+}
+.total-block {
+    padding: 24px;
+    .main-btn {
+        width: 100%;
+    }
+    &__top, &__body {
+        margin-bottom: 18px;
+    }
+    &__det {
+        padding-bottom: 8px;
+        border-bottom: 1px solid #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0
+        }
+        span {
+            font-size: 14px;
+            &:first-child {
+                color: $gray;
+                margin-right: 10px;
+            }
+            &:last-child {
+                font-weight: 500;
+            }
+        }
+    }
+    &__total {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6px;
+    }
+    &__total-lbl {
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    &__price {
+        margin-bottom: 10px;
+        del {
+            font-size: 14px;
+            font-weight: 500;
+            color: $gray;
+        }
+        .rub {
+            font-weight: 600;
+        }
+    }
+    @media (max-width: $bp1) {
+        padding: 20px;
+    }
+    @media (max-width: $bp2) {
+        padding: 20px 10px;
+    }
+    @media (max-width: $bp3) {
+        max-width: 400px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,49 @@
+<!--item-cart-->
+<div class="mb-30 item-cart">
+    <div class="item-cart__left">
+        <label class="item-checkbox item-cart__check">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+        <a href="#" class="item-cart__preview">
+            <div class="media-contain">
+                <img src="img/product-1-1-sm.jpg" alt="Liquidimplant™ Labium 1 мл.">
+            </div>
+        </a>
+    </div>
+    <div class="item-cart__content">
+        <div class="item-cart__info">
+            <h5><a href="#">Liquidimplant™ Labium 1 мл.</a></h5>
+            <h6>Ботулинический токсин типа А, гемагглютинин комплекс</h6>
+            <div class="item-cart__action">
+                @@if ( fav === true) {
+                    <button type="button" class="js-fav active"><svg><use xlink:href="img/icons/sprite.svg#cart-fav"></use></svg>В избранное</button>
+                }
+                @@if ( fav === false) {
+                    <button type="button" class="js-fav"><svg><use xlink:href="img/icons/sprite.svg#cart-fav"></use></svg>В избранное</button>
+                }
+                <button type="button"><svg><use xlink:href="img/icons/sprite.svg#del"></use></svg>Удалить</button>
+            </div>
+            @@if ( att === true) {
+                <div class="info-block">
+                    <div class="info-block__top">
+                        <div class="info-block__icon"><img src="img/icons/3d-rotate.svg" alt=""></div>
+                        <p>Товар является лекарственным средством, доступен только для самовывоза.</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="item-cart__price">1000 ₽ / 1 шт.</div>
+        <div class="quantity">
+            <button class="quantity__btn js-minus" type="button"></button>
+            <span class="quantity__count"><input type="number" value="1"></span>
+            <button class="quantity__btn js-plus" type="button"></button>
+        </div>
+        <div class="item-cart__total">
+            <div class="h5 rub item-cart__totalprice">1 000</div>
+            <del>1 100</del>
+            <div class="item-cart__bonus">118</div>
+            <div class="item-cart__price">1000 ₽ / 1 шт.</div>
+        </div>
+    </div>
+</div>
