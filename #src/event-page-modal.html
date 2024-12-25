@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('_head.html', { "title": "Мероприятие" })
+
+  <body>
+    <div class="wrap">
+      @@include('_preloader.html')
+      <!--header-->
+      @@include('_header.html', {"main": false, "search": false})
+      <!--main-->
+      <main class="main">
+        <div class="container">
+          <div class="page">
+            @@include("_aside.html")
+            <div class="page__content event">
+              <div class="shadow-block">
+                <div class="page__top">
+                  @@include("_breadcrumbs-2.html",{"page1":"Учебный центр","page2":"Индивидуальное обучение с постановкой руки"})
+                  <div class="event__top">
+                    <h1>Индивидуальное обучение с постановкой руки</h1>
+                    <a href="#form" class="btn main-btn product__add">Записаться</a>
+                  </div>
+                </div>
+              </div>
+              <div class="event__body">
+                <div class="shadow-block event__block">
+                    <h3>Общая информация</h3>
+                    <div class="event__subblock">
+                        <h6>Дата:</h6>
+                        <p>
+                            3 января 2024
+                        </p>
+                    </div>
+                    <div class="event__subblock">
+                        <h6>Время:</h6>
+                        <p>
+                            15:00
+                        </p>
+                    </div>
+                    <div class="event__subblock">
+                        <h6>Место проведения:</h6>
+                        <p>
+                            107076, г. Москва, Стромынский переулок, д.6 (м. Сокольники)
+                        </p>
+                        <button type="button" class="btn main-btn main-btn--light mod-open-btn" data-modal="support-modal">Посмотреть на карте</button>
+                    </div>
+                    <div class="event__subblock">
+                        <h6>Формат:</h6>
+                        <p>
+                            Индивидуальное обучение
+                        </p>
+                    </div>
+                    <div class="event__subblock">
+                        <h6>Условия:</h6>
+                        <p>
+                            Уточняйте у организваторов
+                        </p>
+                    </div>
+                    <div class="event__subblock">
+                        <h6>Продолжительность:</h6>
+                        <p>
+                            2 часа
+                        </p>
+                    </div>
+                </div>
+                <div class="shadow-block event__block event__block-right">
+                    <h3>Общая информация</h3>
+                    <div class="event__subblock">
+                        <h6>Преимущества индивидуального обучения:</h6>
+                        <ul>
+                            <li>Обучение проводится в формате один на один с тренером;</li>
+                            <li>Программа обучения составляется исходя из уровня подготовки, пожеланий, целей и потребностей слушателя;</li>
+                            <li>Обучение проводится в удобное для слушателя время;</li>
+                            <li>Слушатель получает возможность уделить особое внимание любым аспектам изучаемой методики, пройти индивидуальную постановку руки, отработать на практике различные техники;</li>
+                            <li>После прохождения обучения слушатель получает сертификат установленного образца.</li>
+                        </ul>
+                    </div>
+                    <div class="event__subblock">
+                        <h6>Что ждет на обучении:</h6>
+                        <ul>
+                            <li>Программа составляется в соответствии с вашими потребностями. В программу могут быть включены направления: тредлифтинг, ботулинотерпия, контурная пластика</li>
+                            <li>Обучение длится один день, включает теоретическую (в т.ч. анатомический разбор (нормальная анатомия, возрастная и осложнения), разметка) и практическую части (постановка руки)</li>
+                            <li>Отработка навыков будет проводиться на моделях.</li>
+                        </ul>
+                    </div>
+                    <div class="event__subblock">
+                        <h6>Требование к участникам:</h6>
+                        <p>
+                            Высшее медицинское образование, наличие модели.
+                        </p>
+                        <p>В случае отсутствия модели оказываем помощь в подборе.</p>
+                        <p>Дополнительная информация по телефону +7 (495) 989-18-19</p>
+                    </div>
+                </div>
+                <div class="event__trainers">
+                    <div class="shadow-block event-trainer">
+                        <h3>Тренер</h3>
+                        <div class="event-trainer__body">
+                            <div class="event-trainer__img">
+                                <img src="img/trainer.jpg" alt="">
+                            </div>
+                            <div class="event-trainer__text">
+                                <h5>Прокудин Сергей Владимирович</h5>
+                                <p>Пластический, реконструктивный, эстетический хирург, Научный руководитель 'European Academy of Anatomy'</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-block event-trainer">
+                        <h3>Тренер</h3>
+                        <div class="event-trainer__body">
+                            <div class="event-trainer__img">
+                                <img src="img/trainer.jpg" alt="">
+                            </div>
+                            <div class="event-trainer__text">
+                                <h5>Прокудин Сергей Владимирович</h5>
+                                <p>Врач-косметолог, врач-дерматолог, дерматохирург, тренер-методист международного класса по контурной пластике и ботулинотерапии, член Ассоциации нитевых имплантологов, участник международных конгрессов и симпозиумов, научных конференций, выставок, семинаров, клинический специалист компании Beauty Expert, клинический опыт более 12 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-block event-trainer">
+                        <h3>Тренер</h3>
+                        <div class="event-trainer__body">
+                            <div class="event-trainer__img">
+                                <img src="img/trainer.jpg" alt="">
+                            </div>
+                            <div class="event-trainer__text">
+                                <h5>Прокудин Сергей Владимирович</h5>
+                                <p>Пластический хирург, председатель Европейской Школы Тредлифтинга, медицинский советник компании Beauty Expert, медицинский советник компании Микроген, врач-дерматолог, врач-косметолог, тренер-методист международного класса, врач-исследователь Института инновационного развития и экспертизы в здравоохранении, член Ассоциации нитевых имплантологов, WOSIAM, RUSIAM, ISCAM, ОСЭМ, МООСБТ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="shadow-block event-form" id="form">
+                <div class="event-form__body">
+                  <div class="modal__top">
+                      <h3>Записаться</h3>
+                  </div>
+                  <form action="" class="form" onsubmit="event.preventDefault();formSuccess(this)">
+                      <div class="item-form">
+                          <input type="text" placeholder="ФИО*">
+                          <div class="item-form__error"></div>
+                      </div>
+                      <div class="item-form">
+                          <input type="tel" placeholder="Телефон*">
+                          <div class="item-form__error"></div>
+                      </div>
+                      <div class="item-form">
+                          <input type="text" placeholder="Email*">
+                          <div class="item-form__error"></div>
+                      </div>
+                      <div class="item-form">
+                          <textarea placeholder="Сообщение" oninput="this.style.height=''; this.style.height = this.scrollHeight + 'px'"></textarea>
+                      </div>
+                      <div class="form__footer">
+                          <p class="form__agree">Нажимая на кнопку «Отправить заявку», вы соглашаетесь с <a href="#" target="_blank">Политикой конфиденциальности</a></p>
+                          <button type="submit" class="btn main-btn">Отправить заявку</button>
+                      </div>
+                  </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--footer-->
+      @@include('_footer.html') @@include('_modal.html')
+      <div class="modal success-modal open" id="password-success-modal">
+        <div class="modal__overlay">
+            <div class="modal__content">
+                <button type="button" class="btn-close modal__close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                <div class="modal__scroll">
+                    <div class="icon-success"></div>
+                    <h3>Ваша заявка успешно отправлена</h3>
+                    <p class="form__agree" style="text-align: center; margin-bottom: 24px; margin-top: -20px;">Наш менеджер скоро свяжется с вами</p>
+                    <a href="#" class="btn main-btn mod-open-btn" data-modal="acc-modal">На главную</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    @@include('_js.html')
+  </body>
+</html>

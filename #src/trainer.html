@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Учебный центр"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                @@include("_breadcrumbs-2.html",{"page1":"Учебный центр", "page2":"Старкова Елена Юрьевна"})
+                                <h1>Старкова Елена Юрьевна</h1>
+                            </div>                      
+                        </div>
+                        <div class="shadow-block trainer">
+                            <div class="trainer__img">
+                                <img src="img/trainer-2.jpg" alt="Аватар тренера">
+                            </div>
+                            <div class="trainer__info">
+                                <div class="trainer__post">
+                                    Пластический хирург, председатель Европейской Школы Тредлифтинга, медицинский советник компании Beauty Expert, медицинский советник компании Микроген, врач-дерматолог, врач-косметолог, тренер-методист международного класса, врач-исследователь Института инновационного развития и экспертизы в здравоохранении, член Ассоциации нитевых имплантологов, WOSIAM, RUSIAM, ISCAM, ОСЭМ, МООСБТ
+                                </div>
+                                <div class="trainer__text">
+                                    <h3>Специализация</h3>
+                                    <h6>Специализация:</h6>
+                                    <p>
+                                        Инъекционная косметология (контурная пластика, ботулинотерапия, карбокситерапия, тредлифтинг).
+                                    </p>
+                                    <h6>Преподаватель и автор курсов для косметологов:</h6>
+                                    <p>
+                                        — Тредлифтинг мезонитями Lead Fine Lift. Базовый курс. <br>
+                                        — Вторая ступень по тредлифтингу мезонитями Lead Fine Lift. Экспертный курс. <br>
+                                        — Третья ступень по тредлифтингу мезонитями Lead Fine Lift. Интенсивный практический курс. <br>
+                                        — Тредлифтинг за один день. Интенсивная программа обучения. <br>
+                                        — Учебно-практический семинар по ботулинотерапи. <br>
+                                        — Контурная пластика филлерами на основе ГК. <br>
+                                        — Карбокситерапия в эстетике лица и тела. <br>
+                                    </p>
+                                    <h6>Членство:</h6>
+                                    <p>WOSIAM , RUSIAM , ISCAM , ОСЭМ, МООСБТ, Ассоциации нитевых имплантологов</p>
+                                    <h6>Образование:</h6>
+                                    <p>Горьковский Медицинский Институт им. Кирова.</p>
+                                    <h6>Стаж преподавательской деятельности:</h6>
+                                    <p>с 2007 года.</p>
+                                    <h6>Город:</h6>
+                                    <p>Москва</p>
+                                </div>
+                            </div>
+                        </div>
+                        @@include("_item-edu.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})   
+                        @@include("_item-edu.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})    
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

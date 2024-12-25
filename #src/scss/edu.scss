@@ -1,0 +1,116 @@
+.item-edu {
+
+  @media (max-width: $bp4) {
+    padding: 20px;
+  }
+
+  &__hat {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & h5 {
+      margin: 0;
+    }
+
+    @media (max-width: $bp5) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+  &__type {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+      fill: $white;
+    }
+
+    & span {
+      font-size: 14px;
+      font-weight: 500;
+      color: $dark-gray;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 32%;
+    gap: 30px;
+    margin-top: 20px;
+
+    & h3 {
+      & a {
+        color: $dark-blue;
+        &:hover {
+          text-decoration: underline;
+          color: $black;
+        }
+      }
+    }
+
+    & h6 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    & p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    @media (max-width: $bp2) {
+      grid-template-columns: 60% 37%;
+      gap: 20px;
+    }
+    @media (max-width: $bp4) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+
+    @media (max-width: $bp2) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__trainer {
+    display: block;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: $light-blue;
+    font-size: 14px;
+    font-weight: 500;
+    color: $dark-blue;
+
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.3s;
+    }
+  }
+
+  &__btn {
+    & button {
+      width: 100%;
+    }
+
+    @media (max-width: $bp4) {
+      grid-row: start 3;
+    }
+  }
+}

@@ -1209,7 +1209,7 @@ h6, .h6 {
         }
       }
       svg {
-        fill: #D1D0D8;
+        fill: #1573ff;
         flex: 0 0 20px;
         width: 20px;
         height: 20px;
@@ -1366,7 +1366,9 @@ h6, .h6 {
     margin-bottom: 24px;
   }
   a,span {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 4px;
     font-weight: 500;
     color: $gray;
     padding: 6.5px 12px;
@@ -1374,10 +1376,21 @@ h6, .h6 {
     transition: all .3s linear;
     margin: 8px 8px;
     cursor: pointer;
+
+    & svg {
+      fill: $gray;
+      width: 20px;
+      height: 20px;
+    }
+
     &.active {
       color: $white;
       background: $maincolor;
       pointer-events: none;
+
+      & svg {
+        fill: $white;
+      }
     }
   }
   @media (max-width: $bp2) {
