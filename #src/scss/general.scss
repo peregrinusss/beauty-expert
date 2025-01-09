@@ -294,6 +294,10 @@ h6, .h6 {
       background: #D0E3FF;
     }
   }
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 }
 .chevron-btn {
   color: $blue;
@@ -1370,15 +1374,16 @@ h6, .h6 {
     align-items: center;
     gap: 4px;
     font-weight: 500;
-    color: $gray;
+    color: $blue;
     padding: 6.5px 12px;
     border-radius: 100px;
+    border: 1px solid $blue;
     transition: all .3s linear;
     margin: 8px 8px;
     cursor: pointer;
 
     & svg {
-      fill: $gray;
+      fill: $blue;
       width: 20px;
       height: 20px;
     }
@@ -1387,6 +1392,7 @@ h6, .h6 {
       color: $white;
       background: $maincolor;
       pointer-events: none;
+      border-color: $maincolor;
 
       & svg {
         fill: $white;
@@ -1588,7 +1594,7 @@ h6, .h6 {
     }
   }
 }
-.icon-success, .icon-error, .icon-del {
+.icon-success, .icon-error, .icon-del, .icon-danger {
   flex: 0 0 64px;
   width: 64px;
   height: 64px;
@@ -1604,6 +1610,9 @@ h6, .h6 {
 }
 .icon-del {
   background: url(../img/icons/del.svg) center / 32px 32px no-repeat, rgba($red, 10%);
+}
+.icon-danger {
+  background: url(../img/icons/danger.svg) center / 32px 32px no-repeat, rgba($red, 10%);
 }
 .read-more {
   &.more-hidden {

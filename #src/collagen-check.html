@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {   
+    "title": "Результаты поиска"
+})
+
+<body>
+    <div class="wrap">
+        @@include('_preloader.html')
+        <!--header-->
+        @@include('_header.html', {"main": false, "search": false})
+        <!--main-->  
+        <main class="main">
+            <div class="container">
+                <div class="page">
+                    @@include("_aside.html")
+                    <div class="page__content collagen">
+                        <div class="shadow-block">
+                            <div class="page__top">
+                                @@include("_breadcrumbs.html",{"page":"Проверка коллагена"})
+                                <h1>Проверка коллагена</h1>  
+                            </div>
+                            <section class="search-p">                        
+                                <!--search-form-->
+                                <form action="" style="margin-bottom: 0;" class="search-form" onsubmit="event.preventDefault();searchFormSuccess(this)">
+                                    <div class="collagen__form">
+                                        <div class="collagen__form-inner">
+                                            <div class="search-form__inner">
+                                                <svg class="search-form__icon"><use xlink:href="img/icons/sprite.svg#search"></use></svg>
+                                                <input id="collagen-input" type="text" name="" placeholder="БФ 1353" value="">
+                                                <button type="reset" class="search-form__reset" aria-label="Очистить поиск">
+                                                    <svg><use xlink:href="img/icons/sprite.svg#close"></use></svg>
+                                                </button>
+                                            </div>
+                                            <button type="submit" class="btn main-btn" id="collagen-btn">Проверить</button>
+                                        </div>
+                                        <div id="error-message" class="error-message"></div>
+                                    </div>
+                                </form>
+                            </section>
+                            <div class="collagen__result">
+                                <div class="icon-success"></div>
+                                <div class="collagen__body">
+                                    <h3>Поздравляем! Вы приобрели сертифицированный препарат коллагена «Linerase»</h3>
+                                    <p class="form__agree" style="margin: 0;">Вы можете скачать инструкцию по применению ниже.</p>
+                                    <a href="#" download class="collagen__download">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 11V17L11 15" stroke="#1573FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 17L7 15" stroke="#1573FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 10V15C22 20 20 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H14" stroke="#1573FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 10H18C15 10 14 9 14 6V2L22 10Z" stroke="#1573FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>загруженный документ.pdf</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="collagen__result">
+                                <div class="icon-danger"></div>
+                                <div class="collagen__body">
+                                    <h3>Опасно! Вы используете незарегистрированный препарат коллагена Linerase! </h3>
+                                    <p class="form__agree" style="margin: 0;">Будьте внимательны при выборе поставщика, остерегайтесь подделок и берегите свою репутацию. Пожалуйста, свяжитесь с нами по указанным телефонам для уточнения информации.</p>
+                                    <div class="collagen__links">
+                                        <a href="tel:+74959891819">+7 495 989-18-19</a>
+                                        <a href="tel:+78003331819">+7 800 333-18-19</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--other-cat-->
+                        <section class="mb-40 swiper4 other-cat">
+                            <div class="section-top">
+                                <h2>Смотрите также</h2>
+                                <div class="nav-btns">
+                                    <button type="button" class="btn nav-btn nav-btn--prev"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></button>
+                                    <button type="button" class="btn nav-btn nav-btn--next"><svg><use xlink:href="img/icons/sprite.svg#btn-next"></use></svg></button>
+                                </div>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":2,"title":"Релатокс 100 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":3,"title":"Гель КОЛЛОСТ 7% 1,5 мл", "fav": false, "bonus": false, "price": false})</div>
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":4,"title":"Канюли Silkann 22G/50mm (25 шт.)", "fav": false, "bonus": false, "price": false})</div>
+                                    <div class="swiper-slide">@@include("_card.html",{"nmb":1,"title":"Релатокс 50 ед.", "fav": false, "bonus": false, "price": false})</div>
+                                </div>                                  
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!--footer-->
+        @@include('_footer.html')
+        @@include('_modal.html')
+    </div>
+    @@include('_js.html')
+</body>
+
+</html>

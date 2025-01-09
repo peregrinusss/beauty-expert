@@ -632,6 +632,11 @@ h6,
   background: #D0E3FF;
 }
 
+.main-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .chevron-btn {
   color: #1573FF;
   border: 1px solid #E2E1E3;
@@ -1834,9 +1839,10 @@ h6,
   align-items: center;
   gap: 4px;
   font-weight: 500;
-  color: #9B9B9B;
+  color: #1573FF;
   padding: 6.5px 12px;
   border-radius: 100px;
+  border: 1px solid #1573FF;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   margin: 8px 8px;
@@ -1845,7 +1851,7 @@ h6,
 
 .tabs a svg,
 .tabs span svg {
-  fill: #9B9B9B;
+  fill: #1573FF;
   width: 20px;
   height: 20px;
 }
@@ -1855,6 +1861,7 @@ h6,
   color: #FFFFFF;
   background: #0D0C1A;
   pointer-events: none;
+  border-color: #0D0C1A;
 }
 
 .tabs a.active svg,
@@ -2103,7 +2110,8 @@ h6,
 
 .icon-success,
 .icon-error,
-.icon-del {
+.icon-del,
+.icon-danger {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 64px;
   flex: 0 0 64px;
@@ -2124,6 +2132,10 @@ h6,
 
 .icon-del {
   background: url(../img/icons/del.svg) center/32px 32px no-repeat, rgba(244, 55, 28, 0.1);
+}
+
+.icon-danger {
+  background: url(../img/icons/danger.svg) center/32px 32px no-repeat, rgba(244, 55, 28, 0.1);
 }
 
 .read-more.more-hidden .read-more__content {
@@ -2630,6 +2642,27 @@ h6,
   -webkit-transition: all 0.13s linear;
   transition: all 0.13s linear;
   margin-left: 8px;
+}
+
+.menu__header-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+.menu__header-icon svg {
+  stroke: none !important;
+  margin-left: 0 !important;
+  -webkit-transform: rotate(0) !important;
+  -ms-transform: rotate(0) !important;
+  transform: rotate(0) !important;
 }
 
 .menu .icon-menu {
@@ -7176,7 +7209,7 @@ h6,
   gap: 12px;
 }
 
-.event__subblock button {
+.event__subblock a {
   max-width: 230px;
 }
 
@@ -7296,9 +7329,112 @@ h6,
   font-weight: 600;
 }
 
+.collagen .other-cat {
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+.collagen__form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.collagen__form-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collagen__form-inner button {
+  white-space: nowrap;
+}
+
+.collagen__result {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.collagen__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.collagen__body .form__agree {
+  font-size: 14px;
+}
+
+.collagen__download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.collagen__download:hover {
+  opacity: 0.6;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.collagen__download span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1573FF;
+}
+
+.collagen__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.collagen__links a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0D0C1A;
+}
+
+.collagen__links a:hover {
+  opacity: 0.6;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.error-message {
+  color: #F4371C;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+  /* По умолчанию скрываем сообщение */
+}
+
 @media (min-width: 767.98px) {
   .menu ul {
-    width: 185px;
+    width: 220px;
     padding: 4px 0;
     border-radius: 20px;
     background: #FFFFFF;
@@ -7334,6 +7470,15 @@ h6,
   .menu li a:hover svg,
   .menu__header:hover svg {
     stroke: #FFFFFF;
+  }
+
+  .menu__header-icon:hover {
+    color: #FFFFFF;
+    background: #1573FF;
+  }
+
+  .menu__header-icon:hover svg {
+    fill: #FFFFFF;
   }
 
   .menu__inner {
@@ -7621,6 +7766,10 @@ h6,
 
   .footer__bottom > * {
     padding: 0 20px;
+  }
+
+  .collagen .other-cat {
+    padding: 0 10px;
   }
 }
 

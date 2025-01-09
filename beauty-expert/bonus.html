@@ -91,6 +91,13 @@
                                     <li><a href="#" class="menu__header">Поставщикам</a></li>
                                     <li><a href="#" class="menu__header">Отзывы</a></li>
                                     <li><a href="#" class="menu__header">Новости</a></li>
+                                    <li><a href="#" class="menu__header menu__header-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#1573FF" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.66671 1.33325C4.17337 1.33325 1.33337 4.17325 1.33337 7.66659C1.33337 11.1599 4.17337 13.9999 7.66671 13.9999C11.16 13.9999 14 11.1599 14 7.66659C14 4.17325 11.16 1.33325 7.66671 1.33325ZM7.66671 9.16659H5.66671C5.39337 9.16659 5.16671 8.93992 5.16671 8.66659C5.16671 8.39325 5.39337 8.16659 5.66671 8.16659H7.66671C7.94004 8.16659 8.16671 8.39325 8.16671 8.66659C8.16671 8.93992 7.94004 9.16659 7.66671 9.16659ZM9.66671 7.16659H5.66671C5.39337 7.16659 5.16671 6.93992 5.16671 6.66659C5.16671 6.39325 5.39337 6.16659 5.66671 6.16659H9.66671C9.94004 6.16659 10.1667 6.39325 10.1667 6.66659C10.1667 6.93992 9.94004 7.16659 9.66671 7.16659Z"/>
+                                            <path d="M14.2003 14.6656C14.0803 14.6656 13.9603 14.619 13.8737 14.5323L12.6337 13.2923C12.4537 13.1123 12.4537 12.819 12.6337 12.6323C12.8137 12.4523 13.107 12.4523 13.2937 12.6323L14.5337 13.8723C14.7137 14.0523 14.7137 14.3456 14.5337 14.5323C14.4403 14.619 14.3203 14.6656 14.2003 14.6656Z"/>
+                                        </svg>
+                                        <span>Проверка коллагена</span>                                            
+                                    </a></li>
                                     <li><a href="#" class="menu__header">Контакты</a></li>
                                 </ul>
                             </nav>
@@ -151,6 +158,13 @@
                             <li class="menu__item"><a href="#" class="menu__header">Поставщикам</a></li>
                             <li class="menu__item"><a href="#" class="menu__header">Отзывы</a></li>
                             <li class="menu__item"><a href="#" class="menu__header">Новости</a></li>
+                            <li><a href="#" class="menu__header menu__header-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="#1573FF" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.66671 1.33325C4.17337 1.33325 1.33337 4.17325 1.33337 7.66659C1.33337 11.1599 4.17337 13.9999 7.66671 13.9999C11.16 13.9999 14 11.1599 14 7.66659C14 4.17325 11.16 1.33325 7.66671 1.33325ZM7.66671 9.16659H5.66671C5.39337 9.16659 5.16671 8.93992 5.16671 8.66659C5.16671 8.39325 5.39337 8.16659 5.66671 8.16659H7.66671C7.94004 8.16659 8.16671 8.39325 8.16671 8.66659C8.16671 8.93992 7.94004 9.16659 7.66671 9.16659ZM9.66671 7.16659H5.66671C5.39337 7.16659 5.16671 6.93992 5.16671 6.66659C5.16671 6.39325 5.39337 6.16659 5.66671 6.16659H9.66671C9.94004 6.16659 10.1667 6.39325 10.1667 6.66659C10.1667 6.93992 9.94004 7.16659 9.66671 7.16659Z"/>
+                                    <path d="M14.2003 14.6656C14.0803 14.6656 13.9603 14.619 13.8737 14.5323L12.6337 13.2923C12.4537 13.1123 12.4537 12.819 12.6337 12.6323C12.8137 12.4523 13.107 12.4523 13.2937 12.6323L14.5337 13.8723C14.7137 14.0523 14.7137 14.3456 14.5337 14.5323C14.4403 14.619 14.3203 14.6656 14.2003 14.6656Z"/>
+                                </svg>
+                                <span>Проверка коллагена</span>                                            
+                            </a></li>
                             <li class="menu__item"><a href="#" class="menu__header">Контакты</a></li>
                         </ul>
                     </nav>
@@ -1127,7 +1141,39 @@
     </div>
 </div>
 
-
+<div class="modal price-modal open" id="trainer-record-modal">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <button type="button" class="btn-close modal__close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+            <div class="modal__scroll">
+                <div class="modal__top">
+                    <h3>Записаться</h3>
+                </div>
+                <form action="" class="form" onsubmit="event.preventDefault();formSuccess(this)">
+                    <div class="item-form">
+                        <input type="text" placeholder="ФИО*">
+                        <div class="item-form__error"></div>
+                    </div>
+                    <div class="item-form">
+                        <input type="tel" placeholder="Телефон*">
+                        <div class="item-form__error"></div>
+                    </div>
+                    <div class="item-form">
+                        <input type="text" placeholder="Email*">
+                        <div class="item-form__error"></div>
+                    </div>
+                    <div class="item-form">
+                        <textarea placeholder="Сообщение" oninput="this.style.height=''; this.style.height = this.scrollHeight + 'px'"></textarea>
+                    </div>
+                    <div class="form__footer">
+                        <p class="form__agree">Нажимая на кнопку «Отправить заявку», вы соглашаетесь с <a href="#" target="_blank">Политикой конфиденциальности</a></p>
+                        <button type="submit" class="btn main-btn">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
     </div>
     <script src="js/libs/jquery.min.js"></script>

@@ -352,6 +352,17 @@
             margin-left: 8px;
         }
     }
+    &__header-icon {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        justify-content: flex-start !important;
+        svg {
+            stroke: none !important;
+            margin-left: 0 !important;
+            transform: rotate(0) !important;
+        }
+    }
     .icon-menu {
         position: relative;
         z-index: 1;
@@ -368,7 +379,7 @@
     }
     @media (min-width: $bp4) {
         ul {
-            width: 185px;
+            width: 220px;
             padding: 4px 0;
             border-radius: 20px;
             background: $white;
@@ -396,6 +407,15 @@
                 background: $blue;
                 svg {
                     stroke: $white;
+                }
+            }
+        }
+        &__header-icon {
+            &:hover {
+                color: $white;
+                background: $blue;
+                svg {
+                    fill: $white;
                 }
             }
         }

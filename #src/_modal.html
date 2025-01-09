@@ -755,4 +755,36 @@
     </div>
 </div>
 
-
+<div class="modal price-modal open" id="trainer-record-modal">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <button type="button" class="btn-close modal__close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+            <div class="modal__scroll">
+                <div class="modal__top">
+                    <h3>Записаться</h3>
+                </div>
+                <form action="" class="form" onsubmit="event.preventDefault();formSuccess(this)">
+                    <div class="item-form">
+                        <input type="text" placeholder="ФИО*">
+                        <div class="item-form__error"></div>
+                    </div>
+                    <div class="item-form">
+                        <input type="tel" placeholder="Телефон*">
+                        <div class="item-form__error"></div>
+                    </div>
+                    <div class="item-form">
+                        <input type="text" placeholder="Email*">
+                        <div class="item-form__error"></div>
+                    </div>
+                    <div class="item-form">
+                        <textarea placeholder="Сообщение" oninput="this.style.height=''; this.style.height = this.scrollHeight + 'px'"></textarea>
+                    </div>
+                    <div class="form__footer">
+                        <p class="form__agree">Нажимая на кнопку «Отправить заявку», вы соглашаетесь с <a href="#" target="_blank">Политикой конфиденциальности</a></p>
+                        <button type="submit" class="btn main-btn">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

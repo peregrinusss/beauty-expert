@@ -41,8 +41,8 @@
                         <h6>Место проведения:</h6>
                         <p>
                             107076, г. Москва, Стромынский переулок, д.6 (м. Сокольники)
-                        </p>
-                        <button type="button" class="btn main-btn main-btn--light mod-open-btn" data-modal="support-modal">Посмотреть на карте</button>
+                        </p> 
+                        <a href="https://yandex.ru/maps/-/CHQGrX6h" target="_blank" type="button" class="btn main-btn main-btn--light">Посмотреть на карте</a>
                     </div>
                     <div class="event__subblock">
                         <h6>Формат:</h6>
@@ -136,7 +136,7 @@
                   <div class="modal__top">
                       <h3>Записаться</h3>
                   </div>
-                  <form action="" class="form" onsubmit="event.preventDefault();formSuccess(this)">
+                  <form action="" class="form trainer-success-form" onsubmit="event.preventDefault();formSuccess(this)">
                       <div class="item-form">
                           <input type="text" placeholder="ФИО*">
                           <div class="item-form__error"></div>
@@ -165,6 +165,19 @@
       </main>
       <!--footer-->
       @@include('_footer.html') @@include('_modal.html')
+      <div class="modal success-modal" id="trainer-success-modal">
+        <div class="modal__overlay">
+            <div class="modal__content">
+                <button type="button" class="btn-close modal__close" aria-label="Закрыть всплывающее окно"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></button>
+                <div class="modal__scroll">
+                    <div class="icon-success"></div>
+                    <h3>Ваша заявка успешно отправлена</h3>
+                    <p class="form__agree" style="text-align: center; margin-bottom: 24px; margin-top: -20px;">Наш менеджер скоро свяжется с вами</p>
+                    <a href="#" class="btn main-btn mod-open-btn" data-modal="acc-modal">На главную</a>
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
     @@include('_js.html')
   </body>

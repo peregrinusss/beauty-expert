@@ -121,6 +121,8 @@ function formSuccess(form, title = false, btnTxt = false) {
     openModal(document.querySelector("#password-success-modal"))
   } else if (form.classList.contains("review-modal__form")) {
     openModal(document.querySelector("#review-success-modal"))
+  } else if (form.classList.contains("trainer-success-form")) {
+    openModal(document.querySelector("#trainer-success-modal"))
   } else {
     if (form.classList.contains("brecipient-form")) {
       setSuccessTxt("Данные получателя успешно изменены","Вернуться к оформлению")
@@ -1224,4 +1226,26 @@ if (filter && filterSelected) {
     })
     filterSelected.addEventListener("click", e => catfilter.selectedOnClick(e))
     document.querySelector(".filter-selected__reset").addEventListener("click", () => catfilter.resetFilter())
+}
+
+// collagen validation
+const collagenInput = document.getElementById('collagen-input');
+
+if (collagenInput) {
+  const errorMessage = document.getElementById('error-message');
+  const submitBtn = document.getElementById('collagen-btn');
+
+  collagenInput.addEventListener('input', function () {
+    const regex = /^[^A-Za-z]*$/;
+  
+    if (!regex.test(collagenInput.value)) {
+        errorMessage.textContent = "Для ввода используйте только русскую раскладку";
+        errorMessage.style.display = "block";
+        submitBtn.disabled = true;
+    } else {
+        errorMessage.style.display = "none";
+        submitBtn.disabled = false;
+    }
+  });
+  
 }
