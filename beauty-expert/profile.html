@@ -15,11 +15,11 @@
     <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin> 
     <link href="css/fancybox.min.css" type="text/css" rel="stylesheet">
     <link href="css/style.min.css" type="text/css" rel="stylesheet">
-    <title>Контакты | Интернет-магазин для косметологов Бьюти-эксперт</title>
+    <title>Профиль | Интернет-магазин для косметологов Бьюти-эксперт</title>
 </head>
 
 <body>
-    <div class="wrap">
+    <div class="wrap wrap--profile">
         <!--preloader-->
 <div class="preloader">
     <div class="preloader__logo">
@@ -187,119 +187,180 @@
             <div class="container">
                 <div class="page">
                     <!--aside-->
-<aside class="page__aside page__aside--cat">
-  <div class="catalog-aside">
-    <nav>
-      <ul>
-        <li><a href="#">Мезонити</a></li>
-        <li><a href="#">Филлеры</a></li>
-        <li><a href="#">Skin Recovery</a></li>
-        <li><a href="#">Биоревитализанты</a></li>
-        <li><a href="#">Пробирки PRP</a></li>
-        <li><a href="#">Аппараты</a></li>
-        <li><a href="#">Канюли</a></li>
-        <li><a href="#">Косметические средства</a></li>
-        <li><a href="#">Иглы, шприцы</a></li>
-        <li><a href="#">Постпроцедурные средства</a></li>
-        <li>
-          <a href="#">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="#1573ff"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M14.0253 13.0332C14.5836 12.6666 15.3169 13.0666 15.3169 13.7332V14.8082C15.3169 15.8666 14.4919 16.9999 13.5003 17.3332L10.8419 18.2166C10.3753 18.3749 9.61693 18.3749 9.15859 18.2166L6.50026 17.3332C5.50026 16.9999 4.68359 15.8666 4.68359 14.8082V13.7249C4.68359 13.0666 5.41693 12.6666 5.96693 13.0249L7.68359 14.1416C8.34193 14.5832 9.17526 14.7999 10.0086 14.7999C10.8419 14.7999 11.6753 14.5832 12.3336 14.1416L14.0253 13.0332Z"
-              />
-              <path
-                d="M16.6503 5.3833L11.6586 2.1083C10.7586 1.51663 9.27526 1.51663 8.37526 2.1083L3.35859 5.3833C1.75026 6.42497 1.75026 8.7833 3.35859 9.8333L4.69193 10.7L8.37526 13.1C9.27526 13.6916 10.7586 13.6916 11.6586 13.1L15.3169 10.7L16.4586 9.94997V12.5C16.4586 12.8416 16.7419 13.125 17.0836 13.125C17.4253 13.125 17.7086 12.8416 17.7086 12.5V8.39997C18.0419 7.32497 17.7003 6.07497 16.6503 5.3833Z"
-              />
-            </svg>
-            Учебный центр</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <div class="fixed-btns">
-      <button type="button" class="btn main-btn main-btn--light js-pageUp">
-        Наверх
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13" fill="none">
-          <path
-            d="M2.03996 8.02502L5.29996 4.76502C5.68496 4.38002 6.31496 4.38002 6.69996 4.76502L9.95996 8.02502"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
-      <a href="tel:88003331819" class="fixed-btns__tel"
-        ><svg><use xlink:href="img/icons/sprite.svg#phone"></use></svg
-      ></a>
+<aside class="page__aside page__aside--acc">
+    <div class="profile-aside">
+        <div class="profile-aside__top">
+            <h5>Иванов Иван Иванович</h5>
+            <span>+7 900 800 600 77</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><svg><use xlink:href="img/icons/sprite.svg#profile"></use></svg>Профиль<span></span></a></li>
+                <li><a href="#"><svg><use xlink:href="img/icons/sprite.svg#fav"></use></svg>Избранное<span>2</span></a></li>
+                <li><a href="#"><svg><use xlink:href="img/icons/sprite.svg#bag"></use></svg>История заказов<span></span></a></li>
+                <li><a href="#"><svg><use xlink:href="img/icons/sprite.svg#messages"></use></svg>Сообщения<span></span></a></li>
+                <li><a href="#"><svg><use xlink:href="img/icons/sprite.svg#settings"></use></svg>Настройки<span></span></a></li>
+                <li><a href="#" class="profile-out"><svg><use xlink:href="img/icons/sprite.svg#log-out"></use></svg>Выйти из аккаунта</a></li>
+            </ul>
+        </nav>
+        <div class="profile-bonus">
+            <div class="media-cover">
+                <picture>
+                    <source srcset="img/bonus-banner.webp" media="(min-width: 991.98px)" type="image/webp">
+                    <source srcset="img/bonus-banner.jpg" media="(min-width: 991.98px)">
+                    <source srcset="img/bonus-banner-s.webp" type="image/webp">
+                    <source srcset="img/bonus-banner-s.jpg"> 
+                    <img src="img/bonus-banner.jpg" alt="">
+                </picture>
+            </div>
+            <div class="profile-bonus__top">
+                <div class="profile-bonus__icon"><img src="img/icons/gift.svg" alt=""></div>
+                <span class="h2">2000</span>
+            </div>
+            <h5>Бьюти Бонусы</h5>
+        </div>
     </div>
-  </div>
 </aside>
-
-                    <!--page__content-->
-                    <div class="page__content">  
+                    <div class="page__content">
                         <div class="page__top shadow-block">
                             <!--breadcrumbs-->
 <div class="breadcrumbs">
     <ul>
         <li><a href="#" class="link">Главная</a></li>
-        <li class="active">Контакты</li>
+        <li class="active">Личный кабинет</li>
     </ul>
 </div>
-                            <h1>Контакты</h1>
-                        </div>                    
-                        <!--contacts-->
-                        <div class="section contacts">
-                            <div class="mb-30 banner-block">
-                                <div class="media-cover"><picture><source srcset="img/contacts-banner.webp" type="image/webp"><img src="img/contacts-banner.jpg" alt=""></picture></div>
-                                <div class="banner-block__content">
-                                    <h2 class="h1">Компания Beauty Expert (Бьюти Эксперт) — ваш надежный поставщик товаров и услуг в сфере эстетической и антивозрастной медицины</h2>
+                            <div class="back-top">
+                                <div class="back-top__inner">
+                                    <a href="account.html" class="back-btn"><svg><use xlink:href="img/icons/sprite.svg#btn-prev"></use></svg></a>
+                                    <h1>Профиль</h1>
                                 </div>
                             </div>
-                            <div class="contacts__tabs">
-                                <div class="mb-30 tabs">
-                                    <a href="contacts-moscow.html" class="active">Москва</a>
-                                    <a href="contacts-spb.html">Санкт-Петербург</a>                                    
-                                </div>
+                        </div>                      
+                        <section class="section profile-p shadow-block">
+                            <div class="section-top">
+                                <h3>Личные данные</h3>
+                                <button type="button" class="btn stroke-btn mod-open-btn" data-modal="profile-modal">Редактировать<svg><use xlink:href="img/icons/sprite.svg#edit"></use></svg></button>
                             </div>
-                            <div class="contacts__block">
-                                <div class="contacts__row">
-                                    <div class="shadow-block">
-                                        <div class="page-content">
-                                            <h3>Общая информация</h3>
-                                            <h6><strong>Адрес:</strong></h6>
-                                            <p>107076, г. Москва, Стромынский переулок, д.6 (м. Сокольники)</p>
-                                            <a target="_blank" href="https://yandex.ru/maps/org/klinika_esteticheskoy_meditsiny_beauty_expert/1700398732/?ll=37.693940%2C55.792060&utm_source=share&z=17" class="btn main-btn main-btn--light">Посмотреть на карте</a>
-                                            <h6><strong>Режим работы:</strong></h6>
-                                            <p>ПН-ПТ с 10:00 до 18:30</p>
-                                            <h6><strong>Контакты:</strong></h6>
-                                            <p>Телефоны: <strong>+7 495 989-18-19, 8 800 333-18-19</strong>
-                                            (звонок по России бесплатный)<br>
-                                            Электронная почта: info@mybex.ru</p>
+                            <div class="profile-p__sec">
+                                <h5>Иванов Иван Иванович</h5>
+                                <div class="mb-40 profile-p__items">
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#phone"></use></svg>
                                         </div>
+                                        <span>+7 900 800 600 77</span>
                                     </div>
-                                    <div class="shadow-block">
-                                        <div class="page-content">
-                                            <h3>Как добраться</h3>
-                                            <p>м. Сокольники. Выйдя из метро, переходите на противоположную сторону улицы Стромыкина. Проезжаете на транспорте до остановки «ул. Короленко — Социальный университет» (2 остановки)</p>
-                                            <p class="txt-line">Автобусы: 265, 716, 78<br>
-                                                Маршрутки: 716, 269 м, 32 м, 516 м, 570 м<br>
-                                                Трамваи: 7, 13<br>
-                                                Троллейбусы: 41, 32, 14</p>
-                                            <p>От остановки идете до следующего светофора (Стромынский переулок) и поворачиваете направо до 2-й Боевской улицы и на пересечении со Стромынским переулком будет расположено здание Клубного дома Tivoli</p>
-                                            <p>С торца этого здания расположен вход в Учебный центр «Бьюти Эксперт».</p>
-                                            <a target="_blank" href="https://yandex.ru/maps/213/moscow/?ll=37.687606%2C55.791601&mode=routes&rtext=55.789200%2C37.679706~55.792316%2C37.694010&rtt=mt&ruri=ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3Dstation__9858908~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc0Njg0ORJG0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCh0YLRgNC-0LzRi9C90YHQutC40Lkg0L_QtdGA0LXRg9C70L7QuiwgNiIKDarGFkIVVStfQg%2C%2C&utm_source=share&z=15.18" class="btn main-btn main-btn--light">Посмотреть маршрут</a>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#mail"></use></svg>
                                         </div>
+                                        <span>marketing@mybex.ru</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#location"></use></svg>
+                                        </div>
+                                        <span>Москва</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#address"></use></svg>
+                                        </div>
+                                        <span>ул. Маросейка, 20, кв. 100, эт. 8</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#education"></use></svg>
+                                        </div>
+                                        <span>Высшее медицинское</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="section-top">
+                                <h3>Данные организации</h3>
+                            </div>
+                            <div class="profile-p__sec">
+                                <div class="mb-40 profile-p__items">
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#phone"></use></svg>
+                                        </div>
+                                        <span>+7 900 800 600 77</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#mail"></use></svg>
+                                        </div>
+                                        <span>marketing@mybex.ru</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#location"></use></svg>
+                                        </div>
+                                        <span>Москва</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#education"></use></svg>
+                                        </div>
+                                        <span>Высшее медицинское</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#comp-name"></use></svg>
+                                        </div>
+                                        <span>Название компании</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#inn"></use></svg>
+                                        </div>
+                                        <span>ИНН</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#address"></use></svg>
+                                        </div>
+                                        <span>ул. Маросейка, 20, кв. 100, эт. 8</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#post"></use></svg>
+                                        </div>
+                                        <span>Должность</span>
+                                    </div>
+                                    <div class="item-contact">
+                                        <div class="item-contact__icon">
+                                            <svg><use xlink:href="img/icons/sprite.svg#site"></use></svg>
+                                        </div>
+                                        <span>сайткомпании.ру</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-p__sec">
+                                <h5>Документ об образовании</h5>
+                                <form class="edu-profile">
+                                    <div class="item-form file-form">
+                                        <div class="file-form__items">
+                                            <div class="file-form__item">
+                                                <span class="file-form__del edu-profile__del"><svg><use xlink:href="img/icons/sprite.svg#close"></use></svg></span>
+                                                <div class="media-contain"><picture><source srcset="img/cert.webp" type="image/webp"><img src="img/cert.png" alt=""></picture></div>
+                                            </div>
+                                            <label class="edu-profile__add">
+                                                <input type="file" accept=".png,.jpg,.jpeg,.gif,.bmp,.pdf,.txt,.rtf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.ods,.odp">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+                                                    <path d="M14.666 22H29.3327" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M22 29.3307V14.6641" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16.4993 40.3307H27.4993C36.666 40.3307 40.3327 36.6641 40.3327 27.4974V16.4974C40.3327 7.33073 36.666 3.66406 27.4993 3.66406H16.4993C7.33268 3.66406 3.66602 7.33073 3.66602 16.4974V27.4974C3.66602 36.6641 7.33268 40.3307 16.4993 40.3307Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <div class="item-form__error"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
